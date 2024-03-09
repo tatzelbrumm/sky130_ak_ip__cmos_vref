@@ -1,0 +1,31 @@
+v {xschem version=3.4.4 file_version=1.2
+}
+G {}
+K {name=mixer_subckt
+type=subcircuit
+format="@name @pinlist @symname"
+template="name=X1"
+}
+V {}
+S {}
+E {}
+L 4 -100 -40 90 -40 {}
+L 4 -100 40 90 40 {}
+L 4 90 20 120 20 {}
+L 4 90 -20 120 -20 {}
+L 4 -130 -20 -100 -20 {}
+L 4 -130 20 -100 20 {}
+L 4 90 -40 90 40 {}
+L 4 -100 -40 -100 40 {}
+B 5 -132.5 -22.5 -127.5 -17.5 {name=vdd
+dir=in}
+B 5 117.5 17.5 122.5 22.5 {name=gnd
+dir=in}
+B 5 -132.5 17.5 -127.5 22.5 {name=trim[0:3]
+dir=in}
+B 5 117.5 -22.5 122.5 -17.5 {name=vref
+dir=out}
+T {trim[0:3]} 0 30 2 0 0.4 0.4 {}
+T {vdd} -50 -10 2 0 0.4 0.4 {}
+T {gnd} 80 30 2 0 0.4 0.4 {}
+T {Vref} 40 -30 0 0 0.4 0.4 {}
