@@ -209,7 +209,7 @@ electrical_parameters {
 	}
 	simulate {
 		tool:		ngspice
-		template:	tb_temp_sweep.spice
+		template:	tb_power.spice
 		format:		ascii .data null result
 	}
 	conditions {
