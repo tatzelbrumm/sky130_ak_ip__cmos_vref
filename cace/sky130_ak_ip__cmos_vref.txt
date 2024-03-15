@@ -167,12 +167,12 @@ electrical_parameters {
 	unit: 		{micro}A
 	spec {
 		minimum:	any
-		typical:	170
-		maximum:	250	fail
+		typical:	2
+		maximum:	5	fail
 	}
 	simulate {
 		tool:		ngspice
-		template:	tb_temp_sweep.spice
+		template:	tb_power.spice
 		format:		ascii .data null result
 	}
 	conditions {
@@ -181,14 +181,14 @@ electrical_parameters {
 
 		+
 		name: Vavdd
-		typical: 1.8
-
-		+
-		name: ena
+		min: 1.62
+		max: 1.98
 		typical: 1.8
 
 		+
 		name: temperature
+		min: -40
+		max: 85
 		typical: 27
 
 		+
@@ -204,8 +204,8 @@ electrical_parameters {
 	unit:			{micro}A
 	spec {
 		minimum:	any
-		typical:	170
-		maximum:	250	fail
+		typical:	2
+		maximum:	5	fail
 	}
 	simulate {
 		tool:		ngspice
@@ -218,14 +218,14 @@ electrical_parameters {
 
 		+
 		name: Vavdd
+		min: 1.62
+		max: 1.98
 		typical: 1.8
 
 		+
-		name: ena
-		typical: 0
-
-		+
 		name: temperature
+		min: -40
+		max: 85
 		typical: 27
 
 		+
