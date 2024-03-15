@@ -233,6 +233,49 @@ electrical_parameters {
 		typical: tt
 	}
 
+	+
+	name:		psrr_1k
+	status:		skip
+	description:	PSRR @ 1kHz
+	display:	PSRR @ 1kHz
+	unit:		dB
+	spec {
+		maximum:	any
+		typical:	70
+		minimum:	60 fail
+	}
+	simulate {
+		tool:		ngspice
+		template:	tb_psrr.spice
+		format:		ascii .data result
+	}
+	conditions {
+		name: Vavdd
+		typical: 1.8
+
+		+
+		name: Vdvdd
+		typical: 1.8
+
+		+
+		name: temperature
+		maximum: 85
+		typical: 27
+		minimum: -40
+
+		+
+		name: frequency
+		unit: Hz
+		typical: 1k
+		note: Center frequency for the PSRR simulation
+
+		+
+		name: corner
+		minimum: ss
+		typical: tt
+		maximum: ff
+	}
+
 }
 
 # List of physical parameters to be measured and their specified limits
