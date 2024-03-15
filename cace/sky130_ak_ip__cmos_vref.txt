@@ -2,10 +2,10 @@
 # CACE circuit characterization file
 #--------------------------------------------------------------
 
-name:		sky130_ak_ip__cmos_vref
+name:			sky130_ak_ip__cmos_vref
 description:	All-CMOS voltage reference based on the NFET threshold voltage
-commit:		N/A
-PDK:		sky130A
+commit:			N/A
+PDK:			sky130A
 
 cace_format:	4.0
 
@@ -24,11 +24,11 @@ paths {
 	schematic:	xschem
 	magic:		mag
 	layout:		gds
-	lvs_netlist:	netlist/lvs
-	rcx_netlist:	netlist/rcx
-	schem_netlist:	netlist/schem
+	netlist:	netlist
 	testbench:	cace
 	simulation:	ngspice
+	reports:	reports
+	plots:		plots
 	logs:		ngspice/log
 }
 
@@ -41,26 +41,83 @@ dependencies {
 
 pins {
 	name:		vref
-	description:	Refrence Voltage Output
+	description:	Reference Voltage Output
 	type:		analog
 	direction:	output
-	Vmin:		vss - 0.3
-	Vmax:		dvdd + 0.3
+	Vmin:		avss - 0.3
+	Vmax:		avdd + 0.3
 
-	name:		vdd
+	+
+	name:		vx
+	description:	PTAT Voltage Output
+	type:		analog
+	direction:	output
+	Vmin:		avss - 0.3
+	Vmax:		avdd + 0.3
+
+	+
+	name:		avdd
 	description:	Positive analog power supply
 	type:		power
 	direction:	inout
-	Vmin:		3.0
-	Vmax:		3.5
+	Vmin:		1.5
+	Vmax:		2.1
+
+	+
+	name:		dvdd
+	description:	Positive digital power supply
+	type:		power
+	direction:	inout
+	Vmin:		1.5
+	Vmax:		2.1
 
  	+
-	name:		vss
+	name:		avss
 	description:	Analog ground
 	type:		ground
 	direction:	inout
 	Vmin:		-0.3
 	Vmax:		0.3
+
+	+
+	name:		dvss
+	description:	Digital ground
+	type:		ground
+	direction:	inout
+	Vmin:		-0.3
+	Vmax:		0.3
+
+	+
+	name:		trim0
+	description:	Trim bit 0
+	type:		digital
+	direction:	input
+	Vmin:		dgnd-0.3
+	Vmax:		dvdd+0.3
+
+	+
+	name:		trim1
+	description:	Trim bit 1
+	type:		digital
+	direction:	input
+	Vmin:		dgnd-0.3
+	Vmax:		dvdd+0.3
+
+	+
+	name:		trim2
+	description:	Trim bit 2
+	type:		digital
+	direction:	input
+	Vmin:		dgnd-0.3
+	Vmax:		dvdd+0.3
+
+	+
+	name:		trim3
+	description:	Trim bit 3
+	type:		digital
+	direction:	input
+	Vmin:		dgnd-0.3
+	Vmax:		dvdd+0.3
 }
 
 # Default values for electrical parameter measurement conditions
@@ -115,7 +172,7 @@ electrical_parameters {
 	}
 	simulate {
 		tool:		ngspice
-		template:	dccurrent_vdd.spice
+		template:	tb_temp_sweep.spice
 		format:		ascii .data null result
 	}
 	conditions {
@@ -123,14 +180,12 @@ electrical_parameters {
 		typical: 1.8
 
 		+
-		name: Vvdd
-		typical: 3.3
+		name: Vavdd
+		typical: 1.8
 
 		+
-		name: Vcm
-		maximum: 3.3
-		typical: 1.65
-		minimum: 0.0
+		name: ena
+		typical: 1.8
 
 		+
 		name: temperature
@@ -142,11 +197,11 @@ electrical_parameters {
 	}
 
 	+
-	name:		Idd_disabled
-	status:		skip
+	name:			Idd_disabled
+	status:			skip
 	description:	Current draw through analog supply, circuit disabled
-	display:	Standby current
-	unit:		{micro}A
+	display:		Standby current
+	unit:			{micro}A
 	spec {
 		minimum:	any
 		typical:	170
@@ -154,7 +209,7 @@ electrical_parameters {
 	}
 	simulate {
 		tool:		ngspice
-		template:	dccurrent_vdd.spice
+		template:	tb_temp_sweep.spice
 		format:		ascii .data null result
 	}
 	conditions {
@@ -162,14 +217,8 @@ electrical_parameters {
 		typical: 1.8
 
 		+
-		name: Vvdd
-		typical: 3.3
-
-		+
-		name: Vcm
-		maximum: 3.3
-		typical: 1.65
-		minimum: 0.0
+		name: Vavdd
+		typical: 1.8
 
 		+
 		name: ena
@@ -184,4 +233,43 @@ electrical_parameters {
 		typical: tt
 	}
 
+}
+
+# List of physical parameters to be measured and their specified limits
+
+physical_parameters {
+	name:		area
+	status:		skip
+	description:	Total circuit layout area
+	display:	area
+	unit: 		{micro}m{squared}
+	spec {
+		maximum:	50000	fail
+	}
+	evaluate {
+		tool:		cace_area
+	}
+
+	+
+	name:		LVS_errors
+	description:	LVS errors
+	display:	LVS errors
+	spec {
+		maximum:	0	fail
+	}
+	evaluate {
+		tool:		cace_lvs run_project_lvs.tcl
+	}
+
+	+
+	name:		DRC_errors
+	status:		skip
+	description:	DRC errors
+	display:	DRC errors
+	spec {
+		maximum:	0	fail
+	}
+	evaluate {
+		tool:		cace_drc
+	}
 }

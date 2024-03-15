@@ -14,11 +14,11 @@ lab=vx}
 N 2740 -160 2760 -160 {
 lab=vref}
 N 2800 -130 2800 -100 {
-lab=gnd}
+lab=agnd}
 N 2800 -100 3020 -100 {
-lab=gnd}
+lab=agnd}
 N 3020 -100 3020 -60 {
-lab=gnd}
+lab=agnd}
 N 2930 -210 2930 -180 {
 lab=vx}
 N 3180 -380 3260 -380 {
@@ -30,9 +30,9 @@ lab=#net2}
 N 3180 -290 3260 -290 {
 lab=#net3}
 N 3020 -100 3300 -100 {
-lab=gnd}
+lab=agnd}
 N 3300 -260 3300 -100 {
-lab=gnd}
+lab=agnd}
 N 2800 -210 3140 -210 {
 lab=vx}
 N 3140 -260 3140 -210 {
@@ -66,27 +66,27 @@ lab=#net4}
 N 2800 -450 2800 -330 {
 lab=vref}
 N 2800 -540 2800 -510 {
-lab=vdd}
+lab=avdd}
 N 3300 -540 3300 -510 {
-lab=vdd}
+lab=avdd}
 N 3140 -540 3140 -510 {
-lab=vdd}
+lab=avdd}
 N 2800 -540 3300 -540 {
-lab=vdd}
+lab=avdd}
 N 3040 -600 3040 -540 {
-lab=vdd}
+lab=avdd}
 N 3260 -480 3510 -480 {
 lab=#net4}
 N 3510 -480 3510 -380 {
 lab=#net4}
 N 3510 -320 3510 -100 {
-lab=gnd}
+lab=agnd}
 N 3300 -100 3510 -100 {
-lab=gnd}
+lab=agnd}
 N 3610 -260 3610 -100 {
-lab=gnd}
+lab=agnd}
 N 3510 -100 3610 -100 {
-lab=gnd}
+lab=agnd}
 N 3260 -290 3570 -290 {
 lab=#net3}
 N 3550 -350 3610 -350 {
@@ -94,9 +94,9 @@ lab=#net5}
 N 3610 -380 3610 -320 {
 lab=#net5}
 N 3610 -540 3610 -440 {
-lab=vdd}
+lab=avdd}
 N 3300 -540 3610 -540 {
-lab=vdd}
+lab=avdd}
 N 2620 -480 2840 -480 {
 lab=#net4}
 N 2580 -450 2580 -420 {
@@ -116,15 +116,15 @@ lab=vref}
 N 2100 -450 2100 -420 {
 lab=vref}
 N 2100 -630 2100 -600 {
-lab=vdd}
+lab=avdd}
 N 2260 -630 2260 -600 {
-lab=vdd}
+lab=avdd}
 N 2410 -630 2410 -600 {
-lab=vdd}
+lab=avdd}
 N 2580 -630 2580 -600 {
-lab=vdd}
+lab=avdd}
 N 2100 -630 2580 -630 {
-lab=vdd}
+lab=avdd}
 N 2100 -420 2800 -420 {
 lab=vref}
 N 2450 -480 2620 -480 {
@@ -134,15 +134,11 @@ lab=#net4}
 N 2140 -480 2300 -480 {
 lab=#net4}
 N 2340 -670 2340 -630 {
-lab=vdd}
-N 2800 -670 2800 -540 {
-lab=vdd}
-N 2340 -670 2800 -670 {
-lab=vdd}
+lab=avdd}
 C {devices/opin.sym} 2700 -330 0 1 {name=p2 lab=vref
 }
-C {devices/iopin.sym} 3020 -60 0 0 {name=p9 lab=gnd}
-C {devices/iopin.sym} 3040 -600 0 0 {name=p10 lab=vdd}
+C {devices/iopin.sym} 3020 -60 0 0 {name=p9 lab=avss}
+C {devices/iopin.sym} 3040 -600 0 0 {name=p10 lab=avdd}
 C {sky130_fd_pr/nfet3_01v8.sym} 2780 -260 0 0 {name=M2
 L=10
 W=2
@@ -238,7 +234,7 @@ spiceprefix=X
 C {sky130_fd_pr/pfet3_01v8.sym} 3160 -480 0 1 {name=M7
 W=5
 L=10
-body=VDD
+body=avdd
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -253,7 +249,7 @@ spiceprefix=X
 C {sky130_fd_pr/pfet3_01v8.sym} 3280 -480 0 0 {name=M8
 W=5
 L=10
-body=VDD
+body=avdd
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -268,7 +264,7 @@ spiceprefix=X
 C {sky130_fd_pr/pfet3_01v8.sym} 2820 -480 0 1 {name=M9
 W=50
 L=10
-body=VDD
+body=avdd
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -318,7 +314,7 @@ C {devices/ipin.sym} 2140 -570 0 1 {name=p6 lab=trim3}
 C {sky130_fd_pr/pfet3_01v8.sym} 2600 -480 0 1 {name=M12
 W=1
 L=0.15
-body=VDD
+body=avdd
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -333,7 +329,7 @@ spiceprefix=X
 C {sky130_fd_pr/pfet3_01v8.sym} 2430 -480 0 1 {name=M13
 W=1
 L=0.15
-body=VDD
+body=avdd
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -348,7 +344,7 @@ spiceprefix=X
 C {sky130_fd_pr/pfet3_01v8.sym} 2600 -570 0 1 {name=M14
 W=1
 L=0.15
-body=VDD
+body=dvdd
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -363,7 +359,7 @@ spiceprefix=X
 C {sky130_fd_pr/pfet3_01v8.sym} 2430 -570 0 1 {name=M15
 W=1
 L=0.15
-body=VDD
+body=dvdd
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -378,7 +374,7 @@ spiceprefix=X
 C {sky130_fd_pr/pfet3_01v8.sym} 2280 -480 0 1 {name=M16
 W=1
 L=0.15
-body=VDD
+body=avdd
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -393,7 +389,7 @@ spiceprefix=X
 C {sky130_fd_pr/pfet3_01v8.sym} 2280 -570 0 1 {name=M17
 W=1
 L=0.15
-body=VDD
+body=dvdd
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -408,7 +404,7 @@ spiceprefix=X
 C {sky130_fd_pr/pfet3_01v8.sym} 2120 -480 0 1 {name=M18
 W=1
 L=0.15
-body=VDD
+body=avdd
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -423,7 +419,7 @@ spiceprefix=X
 C {sky130_fd_pr/pfet3_01v8.sym} 2120 -570 0 1 {name=M19
 W=1
 L=0.15
-body=VDD
+body=dvdd
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -435,3 +431,6 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
+C {devices/iopin.sym} 2500 -370 0 0 {name=p7 lab=dvdd}
+C {devices/iopin.sym} 2500 -340 0 0 {name=p8 lab=dvss}
+C {devices/lab_pin.sym} 2340 -670 0 0 {name=p11 sig_type=std_logic lab=avdd}
