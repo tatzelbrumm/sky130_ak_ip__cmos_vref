@@ -170,6 +170,32 @@ default_conditions {
 # List of electrical parameters to be measured and their specified limits
 
 electrical_parameters {
+
+	name:			vref_nom
+	status:			skip
+	description:	Nominal Reference Voltage
+	display:		Vref Nominal
+	unit: 			V
+	spec {
+		minimum:	1.18 fail
+		typical:	1.20
+		maximum:	1.22 fail
+	}
+	simulate {
+		tool:		ngspice
+		template:	tb_vref_mc.spice
+		format:		ascii .data null result
+	}
+	conditions {
+		name: iterations
+		typical: 10
+
+		+
+		name: output_option
+		typical: 1
+	}
+
+	+
 	name:		Idd_enabled
 	status:		skip
 	description:	Current draw through analog supply, circuit enabled
@@ -241,6 +267,31 @@ electrical_parameters {
 		+
 		name: corner
 		typical: tt
+	}
+
+	+
+	name:			accuracy
+	status:			skip
+	description:	Reference voltage error at room temperature
+	display:		Initial Accuracy
+	unit: 			%
+	spec {
+		minimum:	any
+		typical:	0.2
+		maximum:	0.5 fail
+	}
+	simulate {
+		tool:		ngspice
+		template:	tb_vref_mc.spice
+		format:		ascii .data null result
+	}
+	conditions {
+		name: iterations
+		typical: 10
+
+		+
+		name: output_option
+		typical: 2
 	}
 
 	+
