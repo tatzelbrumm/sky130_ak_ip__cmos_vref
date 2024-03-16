@@ -124,6 +124,18 @@ pins {
 # if not otherwise specified
 
 default_conditions {
+	name: 			Vdvdd
+	description: 	Digital Domain Power Supply value
+	unit: 			V
+	typical: 		1.8
+
+	+
+	name: 			Vavdd
+	description: 	Analog domain power supply value
+	unit: 			V
+	typical: 		1.8
+
+	+
 	name:		Rout
 	description:	Output load resistance
 	display:	RLoad
@@ -131,13 +143,11 @@ default_conditions {
 	typical:	100
 
 	+
-	name:		temperature
+	name:			temperature
 	description:	Ambient temperature
-	display:	Temp
-	unit:		{degrees}C
-	minimum:	-40
-	typical:	27
-	maximum:	130
+	display:		Temp
+	unit:			{degrees}C
+	typical:		27
 
 	+
 	name:		corner
