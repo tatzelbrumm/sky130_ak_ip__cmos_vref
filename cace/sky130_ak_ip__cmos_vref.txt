@@ -303,7 +303,6 @@ electrical_parameters {
 		+
 		name: temperature
 		maximum: 85
-		typical: 27
 		minimum: -40
 
 		+
@@ -352,6 +351,51 @@ electrical_parameters {
 		name: temperature
 		minimum: -40
 		maximum: 85
+
+		+
+		name: corner
+		typical: tt
+	}
+
++
+	name:			line_reg_plot
+	status:			skip
+	description:	Reference Voltage vs Supply Voltage
+	display:		Vref vs Vs
+	unit:			mV
+	simulate {
+		tool:		ngspice
+		template:	tb_supply_sweep.spice
+		format:		ascii .data vsupply result
+	}
+	plot {
+		filename: vref_vs_vsup.png
+		xaxis: vsupply
+		yaxis: result
+	}
+	variables {
+		name: vsupply
+		display: Supply Voltage
+		unit: V
+
+		+
+		name: result
+		display: Reference Voltage
+		unit: V
+
+	}
+	conditions {
+		name: Vavdd
+		minimum: 0.8
+		maximum: 1.98
+
+		+
+		name: Vdvdd
+		typical: 1.8
+
+		+
+		name: temperature
+		typical: 27
 
 		+
 		name: corner
