@@ -14,11 +14,11 @@ lab=vx}
 N 2740 -160 2760 -160 {
 lab=vref}
 N 2800 -130 2800 -100 {
-lab=agnd}
+lab=avss}
 N 2800 -100 3020 -100 {
-lab=agnd}
+lab=avss}
 N 3020 -100 3020 -60 {
-lab=agnd}
+lab=avss}
 N 2930 -210 2930 -180 {
 lab=vx}
 N 3180 -380 3260 -380 {
@@ -30,9 +30,9 @@ lab=#net2}
 N 3180 -290 3260 -290 {
 lab=#net3}
 N 3020 -100 3300 -100 {
-lab=agnd}
+lab=avss}
 N 3300 -260 3300 -100 {
-lab=agnd}
+lab=avss}
 N 2800 -210 3140 -210 {
 lab=vx}
 N 3140 -260 3140 -210 {
@@ -80,13 +80,13 @@ lab=#net4}
 N 3510 -480 3510 -380 {
 lab=#net4}
 N 3510 -320 3510 -100 {
-lab=agnd}
+lab=avss}
 N 3300 -100 3510 -100 {
-lab=agnd}
+lab=avss}
 N 3610 -260 3610 -100 {
-lab=agnd}
+lab=avss}
 N 3510 -100 3610 -100 {
-lab=agnd}
+lab=avss}
 N 3260 -290 3570 -290 {
 lab=#net3}
 N 3550 -350 3610 -350 {
@@ -156,7 +156,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet3_01v8.sym} 2780 -160 0 0 {name=M1
 L=20
-W=2
+W=2.5
 body=GND
 nf=1
 mult=1
@@ -277,8 +277,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet3_01v8.sym} 3590 -290 0 0 {name=M10
-L=0.15
-W=1
+L=1
+W=5
 body=GND
 nf=1
 mult=1
@@ -292,8 +292,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet3_01v8.sym} 3530 -350 0 1 {name=M11
-L=0.15
-W=1
+L=1
+W=5
 body=GND
 nf=1
 mult=1
@@ -306,14 +306,14 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/cap_mim_m3_1.sym} 3610 -410 0 0 {name=C1 model=cap_mim_m3_1 W=1 L=1 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 3610 -410 0 0 {name=C1 model=cap_mim_m3_1 W=5 L=5 MF=1 spiceprefix=X}
 C {devices/ipin.sym} 2620 -570 0 1 {name=p3 lab=trim0}
 C {devices/ipin.sym} 2450 -570 0 1 {name=p4 lab=trim1}
 C {devices/ipin.sym} 2300 -570 0 1 {name=p5 lab=trim2}
 C {devices/ipin.sym} 2140 -570 0 1 {name=p6 lab=trim3}
 C {sky130_fd_pr/pfet3_01v8.sym} 2600 -480 0 1 {name=M12
 W=1
-L=0.15
+L=10
 body=avdd
 nf=1
 mult=1
@@ -327,8 +327,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet3_01v8.sym} 2430 -480 0 1 {name=M13
-W=1
-L=0.15
+W=2
+L=10
 body=avdd
 nf=1
 mult=1
@@ -372,8 +372,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet3_01v8.sym} 2280 -480 0 1 {name=M16
-W=1
-L=0.15
+W=4
+L=10
 body=avdd
 nf=1
 mult=1
@@ -402,8 +402,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet3_01v8.sym} 2120 -480 0 1 {name=M18
-W=1
-L=0.15
+W=8
+L=10
 body=avdd
 nf=1
 mult=1
