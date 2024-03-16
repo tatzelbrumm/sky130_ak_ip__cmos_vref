@@ -313,6 +313,51 @@ electrical_parameters {
 		maximum: ff
 	}
 
+	+
+	name:			vref_temp_plot
+	status:			skip
+	description:	Vref vs Temperature
+	display:		Vref vs Temperature
+	unit:			mV
+	simulate {
+		tool:		ngspice
+		template:	tb_temp_sweep.spice
+		format:		ascii .data temp_sweep result
+	}
+	plot {
+		filename: vref_vs_temp.png
+		xaxis: temp_sweep
+		yaxis: result
+	}
+	variables {
+		name: temp_sweep
+		display: Temperature
+		unit: °C
+
+		+
+		name: result
+		display: Reference Voltage
+		unit: V
+
+	}
+	conditions {
+		name: Vavdd
+		typical: 1.8
+
+		+
+		name: Vdvdd
+		typical: 1.8
+
+		+
+		name: temperature
+		minimum: -40
+		maximum: 85
+
+		+
+		name: corner
+		typical: tt
+	}
+
 }
 
 # List of physical parameters to be measured and their specified limits
