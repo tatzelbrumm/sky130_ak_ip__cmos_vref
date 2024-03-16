@@ -10,9 +10,9 @@ The circuit specifications are listed below, but they are getting better day by 
 | Measure             | Value   | Unit   |
 | ------------------- | ------- | ------ |
 | Reference Voltage   | 802     | mV     |
-| Current Consumption | 500     | nA     |
-| PSRR                | 72      | dB     |
-| Temperature Coeff.  | 35      | ppm/°C |
+| Current Consumption | 690     | nA     |
+| PSRR                | 73,5    | dB     |
+| Temperature Coeff.  | 35,5    | ppm/°C |
 
 The temperature behavior is already adjusted, but using NFET1.8 transistors, the temperature coefficient specification of 30 ppm/°C will probably not be reached.
 
