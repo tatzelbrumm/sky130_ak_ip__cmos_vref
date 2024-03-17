@@ -48,6 +48,7 @@ C {devices/code.sym} 190 -330 0 0 {name=stimuli
 only_toplevel=false
 value="
 .control
+set wr_singlescale
 let it = 0
 let iterations = \{iterations|maximum\}
 let output_option = \{output_option\}
@@ -63,14 +64,20 @@ dowhile it < iterations
 	let it = it + 1
 end
 if output_option = 0
-	print vref_data
-	wrdata \\\{simpath\\\}/\\\{filename\\\}_\\\{N\\\}.data vref_data
+	print V(vref_data)
+	let it = 1
+	wrdata ngspice/test.data vref_data[0]
+	set appendwrite
+	dowhile it < iterations
+		wrdata \{simpath\}/\{filename\}_\{N\}.data vref_data[it]
+		let it = it + 1
+	end
 	quit
 end
 let vref_mean = vref_mean / iterations
 if output_option = 1
 	print vref_mean
-	wrdata \\\{simpath\\\}/\\\{filename\\\}_\\\{N\\\}.data vref_mean
+	wrdata \{simpath\}/\{filename\}_\{N\}.data vref_mean
 	quit
 end
 let vref_deviation = 0
@@ -82,7 +89,7 @@ end
 let vref_deviation = (vref_deviation / iterations)^0.5
 let vref_accuracy = 3 * vref_deviation / vref_mean
 print vref_accuracy
-wrdata \\\{simpath\\\}/\\\{filename\\\}_\\\{N\\\}.data vref_accuracy
+wrdata \{simpath\}/\{filename\}_\{N\}.data vref_accuracy
 quit
 .endc
 "}

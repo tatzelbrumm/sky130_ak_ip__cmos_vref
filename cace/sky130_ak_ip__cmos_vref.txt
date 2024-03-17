@@ -279,7 +279,7 @@ electrical_parameters {
 	}
 	conditions {
 		name: iterations
-		typical: 10
+		typical: 100
 
 		+
 		name: output_option
@@ -460,6 +460,31 @@ electrical_parameters {
 		+
 		name: corner
 		typical: tt
+	}
+
+	+
+	name:			vref_histogram
+	status:			skip
+	description:	Reference Voltage vs Process Variation
+	display:		Vref vs Process Variation
+	unit: 			V
+	simulate {
+		tool:		ngspice
+		template:	tb_vref_mc.spice
+		format:		ascii .data null result
+	}
+	plot {
+		type: histogram
+		filename: vref_vs_process.png
+		xaxis: result
+	}
+	conditions {
+		name: iterations
+		maximum: 100
+
+		+
+		name: output_option
+		typical: 0
 	}
 
 }
