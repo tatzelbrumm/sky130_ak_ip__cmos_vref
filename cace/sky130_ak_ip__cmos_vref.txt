@@ -211,11 +211,11 @@ electrical_parameters {
 	}
 
 	+
-	name:		Idd_enabled
-	status:		skip
+	name:			Idd_enabled
+	status:			skip
 	description:	Current draw through analog supply, circuit enabled
-	display:	Idd
-	unit: 		{micro}A
+	display:		Current consumption
+	unit: 			{micro}A
 	spec {
 		minimum:	any
 		typical:	2
@@ -228,19 +228,21 @@ electrical_parameters {
 	}
 	conditions {
 		name: Vavdd
-		min: 1.62
-		max: 1.98
+		minimum: 1.62
+		maximum: 1.98
 		typical: 1.8
 
 		+
 		name: temperature
-		min: -40
-		max: 85
+		minimum: -40
+		maximum: 85
 		typical: 27
 
 		+
 		name: corner
+		minimum: ss
 		typical: tt
+		maximum: ff
 	}
 
 	+
@@ -248,11 +250,11 @@ electrical_parameters {
 	status:			skip
 	description:	Current draw through analog supply, circuit disabled
 	display:		Standby current
-	unit:			{micro}A
+	unit:			pA
 	spec {
 		minimum:	any
-		typical:	2
-		maximum:	5	fail
+		typical:	250
+		maximum:	500	fail
 	}
 	simulate {
 		tool:		ngspice
@@ -261,8 +263,8 @@ electrical_parameters {
 	}
 	conditions {
 		name: Vavdd
-		min: 1.62
-		max: 1.98
+		minimum: 1.62
+		maximum: 1.98
 		typical: 1.8
 
 		+
@@ -271,13 +273,15 @@ electrical_parameters {
 
 		+
 		name: temperature
-		min: -40
-		max: 85
+		minimum: -40
+		maximum: 85
 		typical: 27
 
 		+
 		name: corner
+		minimum: ss
 		typical: tt
+		maximum: ff
 	}
 
 	+
