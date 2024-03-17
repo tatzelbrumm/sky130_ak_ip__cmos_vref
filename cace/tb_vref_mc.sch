@@ -41,6 +41,7 @@ N 170 -50 170 -0 {
 lab=GND}
 N 130 -20 170 -20 {
 lab=GND}
+N -160 10 -120 10 {}
 C {devices/vsource.sym} -130 -270 0 0 {name=Vavdd value="dc \{Vavdd\}"}
 C {devices/vdd.sym} -130 -300 0 0 {name=l7 lab=avdd}
 C {devices/gnd.sym} -130 -240 0 0 {name=l8 lab=GND}
@@ -122,3 +123,4 @@ device="ceramic capacitor"}
 C {devices/gnd.sym} 270 220 0 0 {name=l9 lab=GND}
 C {devices/vdd.sym} -190 -130 0 0 {name=l11 lab=dvdd}
 C {devices/vsource.sym} -190 -100 0 0 {name=Vsense2 value="dc 0"}
+C {devices/gnd.sym} -160 10 0 0 {name=l12 lab=GND}
