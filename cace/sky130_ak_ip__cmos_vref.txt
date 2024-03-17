@@ -212,10 +212,6 @@ electrical_parameters {
 		format:		ascii .data null result
 	}
 	conditions {
-		name: Vdvdd
-		typical: 1.8
-
-		+
 		name: Vavdd
 		min: 1.62
 		max: 1.98
@@ -249,10 +245,6 @@ electrical_parameters {
 		format:		ascii .data null result
 	}
 	conditions {
-		name: Vdvdd
-		typical: 1.8
-
-		+
 		name: Vavdd
 		min: 1.62
 		max: 1.98
@@ -311,14 +303,6 @@ electrical_parameters {
 		format:		ascii .data result
 	}
 	conditions {
-		name: Vavdd
-		typical: 1.8
-
-		+
-		name: Vdvdd
-		typical: 1.8
-
-		+
 		name: temperature
 		maximum: 85
 		typical: 27
@@ -354,14 +338,6 @@ electrical_parameters {
 		format:		ascii .data result
 	}
 	conditions {
-		name: Vavdd
-		typical: 1.8
-
-		+
-		name: Vdvdd
-		typical: 1.8
-
-		+
 		name: temperature
 		maximum: 85
 		minimum: -40
@@ -393,10 +369,6 @@ electrical_parameters {
 		name: Vavdd
 		minimum: 1.62
 		maximum: 1.98
-
-		+
-		name: Vdvdd
-		typical: 1.8
 
 		+
 		name: temperature
@@ -434,17 +406,8 @@ electrical_parameters {
 		name: result
 		display: Reference Voltage
 		unit: V
-
 	}
 	conditions {
-		name: Vavdd
-		typical: 1.8
-
-		+
-		name: Vdvdd
-		typical: 1.8
-
-		+
 		name: temperature
 		minimum: -40
 		maximum: 85
