@@ -9,8 +9,6 @@ N 130 130 200 130 {
 lab=vx}
 N 200 130 200 160 {
 lab=vx}
-N -200 40 -120 40 {
-lab=dvdd}
 N -160 70 -120 70 {
 lab=dvdd}
 N -160 40 -160 70 {
@@ -41,6 +39,12 @@ N 170 -50 170 -0 {
 lab=GND}
 N 130 -20 170 -20 {
 lab=GND}
+N -160 40 -120 40 {
+lab=dvdd}
+N -200 90 -160 90 {
+lab=dvdd}
+N -290 10 -120 10 {
+lab=#net3}
 C {devices/vsource.sym} -130 -270 0 0 {name=Vavdd value="dc \{Vavdd\}"}
 C {devices/vdd.sym} -130 -300 0 0 {name=l7 lab=avdd}
 C {devices/gnd.sym} -130 -240 0 0 {name=l8 lab=GND}
@@ -66,7 +70,7 @@ value=0.1p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 200 220 0 0 {name=l3 lab=GND}
-C {devices/vdd.sym} -200 40 0 0 {name=l4 lab=dvdd}
+C {devices/vdd.sym} -200 90 0 0 {name=l4 lab=dvdd}
 C {devices/code.sym} 70 -330 0 0 {name=model only_toplevel=false value="
 .lib /usr/local/share/pdk/sky130A/libs.tech/combined/sky130.lib.spice \{corner\}
 .option TEMP=\{temperature\}
@@ -83,3 +87,5 @@ device="ceramic capacitor"}
 C {devices/gnd.sym} 270 220 0 0 {name=l9 lab=GND}
 C {devices/vdd.sym} -190 -130 0 0 {name=l11 lab=dvdd}
 C {devices/vsource.sym} -190 -100 0 0 {name=Vsense2 value="dc 0"}
+C {devices/vsource.sym} -290 40 0 0 {name=Vena value="dc \{Vena\}"}
+C {devices/gnd.sym} -290 70 0 0 {name=l12 lab=GND}

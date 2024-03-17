@@ -88,6 +88,14 @@ pins {
 	Vmax:		0.3
 
 	+
+	name:			ena
+	description:	Enable
+	type:			digital
+	direction:		input
+	Vmin:			dgnd-0.3
+	Vmax:			dvdd+0.3
+
+	+
 	name:		trim0
 	description:	Trim bit 0
 	type:		digital
@@ -134,6 +142,13 @@ default_conditions {
 	description: 	Analog domain power supply value
 	unit: 			V
 	typical: 		1.8
+
+	+
+	name:			Vena
+	description:	Enable pin voltage, active low
+	display:		Vena
+	unit:			V
+	typical:		0
 
 	+
 	name:		Rout
@@ -248,6 +263,10 @@ electrical_parameters {
 		name: Vavdd
 		min: 1.62
 		max: 1.98
+		typical: 1.8
+
+		+
+		name: Vena
 		typical: 1.8
 
 		+

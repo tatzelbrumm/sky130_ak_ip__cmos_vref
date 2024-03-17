@@ -66,15 +66,15 @@ lab=#net4}
 N 2800 -450 2800 -330 {
 lab=vref}
 N 2800 -540 2800 -510 {
-lab=avdd}
+lab=avdd_ena}
 N 3300 -540 3300 -510 {
-lab=avdd}
+lab=avdd_ena}
 N 3140 -540 3140 -510 {
-lab=avdd}
+lab=avdd_ena}
 N 2800 -540 3300 -540 {
-lab=avdd}
+lab=avdd_ena}
 N 3040 -600 3040 -540 {
-lab=avdd}
+lab=avdd_ena}
 N 3260 -480 3510 -480 {
 lab=#net4}
 N 3510 -480 3510 -380 {
@@ -94,9 +94,9 @@ lab=#net5}
 N 3610 -380 3610 -320 {
 lab=#net5}
 N 3610 -540 3610 -440 {
-lab=avdd}
+lab=avdd_ena}
 N 3300 -540 3610 -540 {
-lab=avdd}
+lab=avdd_ena}
 N 2620 -480 2840 -480 {
 lab=#net4}
 N 2580 -450 2580 -420 {
@@ -116,15 +116,15 @@ lab=vref}
 N 2100 -450 2100 -420 {
 lab=vref}
 N 2100 -630 2100 -600 {
-lab=avdd}
+lab=avdd_ena}
 N 2260 -630 2260 -600 {
-lab=avdd}
+lab=avdd_ena}
 N 2410 -630 2410 -600 {
-lab=avdd}
+lab=avdd_ena}
 N 2580 -630 2580 -600 {
-lab=avdd}
+lab=avdd_ena}
 N 2100 -630 2580 -630 {
-lab=avdd}
+lab=avdd_ena}
 N 2100 -420 2800 -420 {
 lab=vref}
 N 2450 -480 2620 -480 {
@@ -134,11 +134,19 @@ lab=#net4}
 N 2140 -480 2300 -480 {
 lab=#net4}
 N 2340 -670 2340 -630 {
+lab=avdd_ena}
+N 2520 -270 2540 -270 {
 lab=avdd}
+N 2520 -270 2520 -240 {
+lab=avdd}
+N 2520 -180 2520 -150 {
+lab=avdd_ena}
+N 2520 -150 2540 -150 {
+lab=avdd_ena}
 C {devices/opin.sym} 2700 -330 0 1 {name=p2 lab=vref
 }
 C {devices/iopin.sym} 3020 -60 0 0 {name=p9 lab=avss}
-C {devices/iopin.sym} 3040 -600 0 0 {name=p10 lab=avdd}
+C {devices/iopin.sym} 2540 -270 0 0 {name=p10 lab=avdd}
 C {sky130_fd_pr/nfet3_01v8.sym} 2780 -260 0 0 {name=M2
 L=10
 W=2
@@ -433,4 +441,22 @@ spiceprefix=X
 }
 C {devices/iopin.sym} 2500 -370 0 0 {name=p7 lab=dvdd}
 C {devices/iopin.sym} 2500 -340 0 0 {name=p8 lab=dvss}
-C {devices/lab_pin.sym} 2340 -670 0 0 {name=p11 sig_type=std_logic lab=avdd}
+C {devices/lab_pin.sym} 2340 -670 0 0 {name=p11 sig_type=std_logic lab=avdd_ena}
+C {devices/lab_pin.sym} 3040 -600 0 0 {name=p12 sig_type=std_logic lab=avdd_ena}
+C {devices/lab_pin.sym} 2540 -150 0 1 {name=p13 sig_type=std_logic lab=avdd_ena}
+C {sky130_fd_pr/pfet3_01v8.sym} 2540 -210 0 1 {name=M20
+W=5
+L=0.3
+body=dvdd
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {devices/ipin.sym} 2560 -210 0 1 {name=p14 lab=ena}
