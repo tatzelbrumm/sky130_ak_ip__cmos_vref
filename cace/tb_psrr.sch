@@ -72,7 +72,7 @@ device="ceramic capacitor"}
 C {devices/gnd.sym} 200 220 0 0 {name=l3 lab=GND}
 C {devices/vdd.sym} -200 40 0 0 {name=l4 lab=dvdd}
 C {devices/code.sym} 70 -330 0 0 {name=model only_toplevel=false value="
-.lib /usr/local/share/pdk/sky130A/libs.tech/combined/sky130.lib.spice tt
+.lib /usr/local/share/pdk/sky130A/libs.tech/combined/sky130.lib.spice \{corner\}
 .option TEMP=\\\{temperature\\\}
 .option warn=1
 "}

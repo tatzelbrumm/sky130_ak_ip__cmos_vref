@@ -24,13 +24,13 @@ lab=dvdd}
 N -160 100 -160 130 {
 lab=dvdd}
 N -290 -20 -120 -20 {
-lab=supply}
+lab=#net1}
 N -290 -70 -290 -20 {
-lab=supply}
+lab=#net1}
 N -190 -50 -120 -50 {
-lab=#net1}
+lab=#net2}
 N -190 -70 -190 -50 {
-lab=#net1}
+lab=#net2}
 N 130 40 270 40 {
 lab=vref}
 N 130 -50 170 -50 {
@@ -68,7 +68,7 @@ device="ceramic capacitor"}
 C {devices/gnd.sym} 200 220 0 0 {name=l3 lab=GND}
 C {devices/vdd.sym} -200 40 0 0 {name=l4 lab=dvdd}
 C {devices/code.sym} 70 -330 0 0 {name=model only_toplevel=false value="
-.lib /usr/local/share/pdk/sky130A/libs.tech/combined/sky130.lib.spice tt
+.lib /usr/local/share/pdk/sky130A/libs.tech/combined/sky130.lib.spice \{corner\}
 .option warn=1
 "}
 C {devices/vsource.sym} -30 -270 0 0 {name=Vdvdd value="DC \{Vdvdd\}"}
