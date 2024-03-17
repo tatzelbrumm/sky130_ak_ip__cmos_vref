@@ -139,36 +139,6 @@ C {devices/opin.sym} 2700 -330 0 1 {name=p2 lab=vref
 }
 C {devices/iopin.sym} 3020 -60 0 0 {name=p9 lab=avss}
 C {devices/iopin.sym} 3040 -600 0 0 {name=p10 lab=avdd}
-C {sky130_fd_pr/nfet3_01v8.sym} 2780 -260 0 0 {name=M2
-L=10
-W=2
-body=GND
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/nfet3_01v8.sym} 2780 -160 0 0 {name=M1
-L=20
-W=2.5
-body=GND
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
 C {devices/opin.sym} 2930 -180 0 0 {name=p1 lab=vx
 }
 C {sky130_fd_pr/nfet3_01v8.sym} 3160 -290 0 1 {name=M3
@@ -434,3 +404,33 @@ spiceprefix=X
 C {devices/iopin.sym} 2500 -370 0 0 {name=p7 lab=dvdd}
 C {devices/iopin.sym} 2500 -340 0 0 {name=p8 lab=dvss}
 C {devices/lab_pin.sym} 2340 -670 0 0 {name=p11 sig_type=std_logic lab=avdd}
+C {sky130_fd_pr/nfet3_g5v0d10v5.sym} 2780 -160 0 0 {name=M1
+W=2.5
+L=10
+body=GND
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_g5v0d10v5
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet3_g5v0d10v5.sym} 2780 -260 0 0 {name=M2
+W=2
+L=10
+body=GND
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_g5v0d10v5
+spiceprefix=X
+}
