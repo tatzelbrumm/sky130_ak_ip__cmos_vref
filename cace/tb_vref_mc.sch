@@ -1,4 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -96,7 +96,7 @@ quit
 "}
 C {devices/lab_pin.sym} 270 40 0 1 {name=l10 sig_type=std_logic lab=vref}
 C {devices/gnd.sym} 170 0 0 0 {name=l20 lab=GND}
-C {/home/moduhub/work/sky130_ak_ip__cmos_vref/xschem/sky130_ak_ip__cmos_vref.sym} 10 40 0 0 {name=X1}
+C {xschem/sky130_ak_ip__cmos_vref.sym} 10 40 0 0 {name=X1}
 C {devices/vdd.sym} -290 -130 0 0 {name=l1 lab=avdd}
 C {devices/vsource.sym} -290 -100 0 0 {name=Vsense1 value="dc 0"}
 C {devices/lab_pin.sym} 200 130 0 1 {name=l2 sig_type=std_logic lab=vx}
