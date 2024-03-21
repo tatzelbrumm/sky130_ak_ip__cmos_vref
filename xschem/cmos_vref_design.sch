@@ -1,4 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -767,10 +767,13 @@ C {sky130_fd_pr/corner.sym} 3510 -830 0 0 {name=CORNER only_toplevel=false corne
 C {devices/code.sym} 3370 -830 0 0 {name=temp_sweep only_toplevel=false value="
 .option warn=1
 .control
-save vref, vref_buf, vcm, bias1, bias2, avdd_ena, avdd_vena
+save all
+op
+write vrefdesign_op.raw
 dc TEMP -40 85 5
 plot i(vmavdd), i(vmdvdd)
 plot vref_buf, vref
+write vrefdesign_tempsweep.raw
 .endc
 "}
 C {devices/lab_pin.sym} 4740 -330 0 1 {name=p2 sig_type=std_logic lab=vref_buf}
