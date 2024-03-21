@@ -40,52 +40,68 @@ dependencies {
 # Pin names and descriptions
 
 pins {
-	name:		vref
-	description:	Reference Voltage Output
-	type:		analog
-	direction:	output
-	Vmin:		avss - 0.3
-	Vmax:		avdd + 0.3
+	name:			vbg
+	description:	Bandgap/Reference Voltage Output
+	type:			analog
+	direction:		output
+	Vmin:			avss - 0.3
+	Vmax:			avdd + 0.3
 
 	+
-	name:		vx
-	description:	PTAT Voltage Output
-	type:		analog
-	direction:	output
-	Vmin:		avss - 0.3
-	Vmax:		avdd + 0.3
+	name:			vbgsc
+	description:	1024mV scaled reference voltage
+	type:			analog
+	direction:		output
+	Vmin:			avss - 0.3
+	Vmax:			avdd + 0.3
 
 	+
-	name:		avdd
+	name:			vbgtg
+	description:	1048mV scaled reference voltage
+	type:			analog
+	direction:		output
+	Vmin:			avss - 0.3
+	Vmax:			avdd + 0.3
+
+	+
+	name:			iptat
+	description:	PTAT Current Output
+	type:			analog
+	direction:		output
+	Vmin:			avss - 0.3
+	Vmax:			avdd + 0.3
+
+	+
+	name:			avdd
 	description:	Positive analog power supply
-	type:		power
-	direction:	inout
-	Vmin:		1.5
-	Vmax:		2.1
+	type:			power
+	direction:		inout
+	Vmin:			1.62
+	Vmax:			1.98
 
 	+
-	name:		dvdd
+	name:			dvdd
 	description:	Positive digital power supply
-	type:		power
-	direction:	inout
-	Vmin:		1.5
-	Vmax:		2.1
+	type:			power
+	direction:		inout
+	Vmin:			1.62
+	Vmax:			1.98
 
  	+
-	name:		avss
+	name:			avss
 	description:	Analog ground
-	type:		ground
-	direction:	inout
-	Vmin:		-0.3
-	Vmax:		0.3
+	type:			ground
+	direction:		inout
+	Vmin:			-0.3
+	Vmax:			0.3
 
 	+
-	name:		dvss
+	name:			dvss
 	description:	Digital ground
-	type:		ground
-	direction:	inout
-	Vmin:		-0.3
-	Vmax:		0.3
+	type:			ground
+	direction:		inout
+	Vmin:			-0.3
+	Vmax:			0.3
 
 	+
 	name:			ena
@@ -96,36 +112,44 @@ pins {
 	Vmax:			dvdd+0.3
 
 	+
-	name:		trim0
+	name:			vena
+	description:	Enable scaled outputs
+	type:			digital
+	direction:		input
+	Vmin:			dgnd-0.3
+	Vmax:			dvdd+0.3
+
+	+
+	name:			trim0
 	description:	Trim bit 0
-	type:		digital
-	direction:	input
-	Vmin:		dgnd-0.3
-	Vmax:		dvdd+0.3
+	type:			digital
+	direction:		input
+	Vmin:			dgnd-0.3
+	Vmax:			dvdd+0.3
 
 	+
-	name:		trim1
+	name:			trim1
 	description:	Trim bit 1
-	type:		digital
-	direction:	input
-	Vmin:		dgnd-0.3
-	Vmax:		dvdd+0.3
+	type:			digital
+	direction:		input
+	Vmin:			dgnd-0.3
+	Vmax:			dvdd+0.3
 
 	+
-	name:		trim2
+	name:			trim2
 	description:	Trim bit 2
-	type:		digital
-	direction:	input
-	Vmin:		dgnd-0.3
-	Vmax:		dvdd+0.3
+	type:			digital
+	direction:		input
+	Vmin:			dgnd-0.3
+	Vmax:			dvdd+0.3
 
 	+
-	name:		trim3
+	name:			trim3
 	description:	Trim bit 3
-	type:		digital
-	direction:	input
-	Vmin:		dgnd-0.3
-	Vmax:		dvdd+0.3
+	type:			digital
+	direction:		input
+	Vmin:			dgnd-0.3
+	Vmax:			dvdd+0.3
 }
 
 # Default values for electrical parameter measurement conditions
