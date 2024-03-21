@@ -1,0 +1,1805 @@
+Setting datasheet to cace/sky130_ak_ip__cmos_vref.txt
+Working directory set to cace/.. (/home/cmaier/EDA/efabless/chipalooza2024/sky130_ak_ip__cmos_vref)
+Note: Parameter status changed from "skip" to "active".
+Simulating parameter vref_temp_plot
+Checking for out-of-date schematic-captured netlists.
+Schematic netlist is older than top-level schematic
+Forcing regeneration of schematic-captured netlist.
+Generating simulation netlist from schematic. . .
+Calling xschem to generate netlist
+Warning: open net: dvdd
+Warning: open net: dvss
+Warning: open net: #net7
+Error: overlapped instance found: p16(devices/lab_wire.sym) -> p15
+Checking for out-of-date testbench netlist tb_temp_sweep.spice.
+Netlist is older than subcircuit schematic sky130_ak_ip__cmos_vref
+Generating testbench netlist tb_temp_sweep.spice from schematic. . .
+Calling xschem to generate netlist
+Warning: open net: dvss
+Warning: open net: #net7
+Error: overlapped instance found: p16(devices/lab_wire.sym) -> p15
+Evaluating electrical parameter vref_temp_plot
+Launching Simulations
+Total files to simulate: 1
+Running: ngspice  ngspice/vref_temp_plot_1.spice
+Current working directory is: /home/cmaier/EDA/efabless/chipalooza2024/sky130_ak_ip__cmos_vref
+******
+** ngspice-42 : Circuit level simulation program
+** Compiled with Sparse Direct Linear Solver
+** The U. C. Berkeley CAD Group
+** Copyright 1985-1994, Regents of the University of California.
+** Copyright 2001-2023, The ngspice team.
+** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html
+** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html
+** Creation Date: Sun Mar 10 02:59:47 UTC 2024
+******
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_temp_sweep.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+ Reference value : -4.00000e+01
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+ Reference value :  6.00000e+01
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Warning: Dynamic gmin stepping failed
+Note: Starting true gmin stepping
+Note: True gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+No. of Data Rows : 26
+** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_temp_sweep.sch
+DC transfer characteristic  Thu Mar 21 09:30:21  2024
+--------------------------------------------------------------------------------
+Index   temp-sweep      v(vref)         
+--------------------------------------------------------------------------------
+0	-4.00000e+01	1.653546e+00	
+1	-3.50000e+01	1.657820e+00	
+2	-3.00000e+01	1.661824e+00	
+3	-2.50000e+01	1.665582e+00	
+4	-2.00000e+01	1.669118e+00	
+5	-1.50000e+01	1.672452e+00	
+6	-1.00000e+01	1.675602e+00	
+7	-5.00000e+00	1.678582e+00	
+8	0.000000e+00	1.681406e+00	
+9	5.000000e+00	1.684088e+00	
+10	1.000000e+01	1.686638e+00	
+11	1.500000e+01	1.689066e+00	
+12	2.000000e+01	1.691381e+00	
+13	2.500000e+01	1.693591e+00	
+14	3.000000e+01	1.695703e+00	
+15	3.500000e+01	1.697725e+00	
+16	4.000000e+01	1.699662e+00	
+17	4.500000e+01	1.701521e+00	
+18	5.000000e+01	1.703307e+00	
+19	5.500000e+01	1.705025e+00	
+20	6.000000e+01	1.706680e+00	
+21	6.500000e+01	1.708278e+00	
+22	7.000000e+01	1.709822e+00	
+23	7.500000e+01	1.711318e+00	
+24	8.000000e+01	1.712771e+00	
+25	8.500000e+01	1.714186e+00	
+ngspice-42 done
+Files to simulate method vref_temp_plot: 1
+Completed 1 of 1 simulations
+Plotting results
+Simulation of vref_temp_plot has completed.
+Note: Parameter status changed from "skip" to "active".
+Simulating parameter line_reg_plot
+Checking for out-of-date schematic-captured netlists.
+Checking for out-of-date testbench netlist tb_supply_sweep.spice.
+Netlist is older than subcircuit schematic sky130_ak_ip__cmos_vref
+Generating testbench netlist tb_supply_sweep.spice from schematic. . .
+Calling xschem to generate netlist
+Warning: open net: dvss
+Warning: open net: #net7
+Error: overlapped instance found: p16(devices/lab_wire.sym) -> p15
+Evaluating electrical parameter line_reg_plot
+Launching Simulations
+Total files to simulate: 1
+Running: ngspice  ngspice/line_reg_plot_1.spice
+Current working directory is: /home/cmaier/EDA/efabless/chipalooza2024/sky130_ak_ip__cmos_vref
+******
+** ngspice-42 : Circuit level simulation program
+** Compiled with Sparse Direct Linear Solver
+** The U. C. Berkeley CAD Group
+** Copyright 1985-1994, Regents of the University of California.
+** Copyright 2001-2023, The ngspice team.
+** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html
+** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html
+** Creation Date: Sun Mar 10 02:59:47 UTC 2024
+******
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_supply_sweep.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+ Reference value :  8.00000e-01
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+ Reference value :  9.20000e-01
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+ Reference value :  1.03000e+00
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+ Reference value :  1.18000e+00
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+ Reference value :  1.45000e+00
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+ Reference value :  1.71000e+00
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+ Reference value :  1.92000e+00
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+No. of Data Rows : 119
+ngspice-42 done
+Files to simulate method line_reg_plot: 1
+Completed 1 of 1 simulations
+Plotting results
+Simulation of line_reg_plot has completed.
+Note: Parameter status changed from "skip" to "active".
+Simulating parameter vref_histogram
+Checking for out-of-date schematic-captured netlists.
+Checking for out-of-date testbench netlist tb_vref_mc.spice.
+Netlist is older than subcircuit schematic sky130_ak_ip__cmos_vref
+Generating testbench netlist tb_vref_mc.spice from schematic. . .
+Calling xschem to generate netlist
+Warning: open net: dvss
+Warning: open net: #net7
+Error: overlapped instance found: p16(devices/lab_wire.sym) -> p15
+Evaluating electrical parameter vref_histogram
+Launching Simulations
+Total files to simulate: 1
+Running: ngspice  ngspice/vref_histogram_1.spice
+Current working directory is: /home/cmaier/EDA/efabless/chipalooza2024/sky130_ak_ip__cmos_vref
+******
+** ngspice-42 : Circuit level simulation program
+** Compiled with Sparse Direct Linear Solver
+** The U. C. Berkeley CAD Group
+** Copyright 1985-1994, Regents of the University of California.
+** Copyright 2001-2023, The ngspice team.
+** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html
+** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html
+** Creation Date: Sun Mar 10 02:59:47 UTC 2024
+******
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+iterations = 1.000000e+02
+                                Constant values
+                                constants  Sun Mar 10 02:59:47 UTC 2024
+--------------------------------------------------------------------------------
+Index   vref_data       
+--------------------------------------------------------------------------------
+0	0.000000e+00	
+1	1.000000e+00	
+2	2.000000e+00	
+3	3.000000e+00	
+4	4.000000e+00	
+5	5.000000e+00	
+6	6.000000e+00	
+7	7.000000e+00	
+8	8.000000e+00	
+9	9.000000e+00	
+10	1.000000e+01	
+11	1.100000e+01	
+12	1.200000e+01	
+13	1.300000e+01	
+14	1.400000e+01	
+15	1.500000e+01	
+16	1.600000e+01	
+17	1.700000e+01	
+18	1.800000e+01	
+19	1.900000e+01	
+20	2.000000e+01	
+21	2.100000e+01	
+22	2.200000e+01	
+23	2.300000e+01	
+24	2.400000e+01	
+25	2.500000e+01	
+26	2.600000e+01	
+27	2.700000e+01	
+28	2.800000e+01	
+29	2.900000e+01	
+30	3.000000e+01	
+31	3.100000e+01	
+32	3.200000e+01	
+33	3.300000e+01	
+34	3.400000e+01	
+35	3.500000e+01	
+36	3.600000e+01	
+37	3.700000e+01	
+38	3.800000e+01	
+39	3.900000e+01	
+40	4.000000e+01	
+41	4.100000e+01	
+42	4.200000e+01	
+43	4.300000e+01	
+44	4.400000e+01	
+45	4.500000e+01	
+46	4.600000e+01	
+47	4.700000e+01	
+48	4.800000e+01	
+49	4.900000e+01	
+50	5.000000e+01	
+51	5.100000e+01	
+52	5.200000e+01	
+53	5.300000e+01	
+54	5.400000e+01	
+
+Index   vref_data       
+--------------------------------------------------------------------------------
+55	5.500000e+01	
+56	5.600000e+01	
+57	5.700000e+01	
+58	5.800000e+01	
+59	5.900000e+01	
+60	6.000000e+01	
+61	6.100000e+01	
+62	6.200000e+01	
+63	6.300000e+01	
+64	6.400000e+01	
+65	6.500000e+01	
+66	6.600000e+01	
+67	6.700000e+01	
+68	6.800000e+01	
+69	6.900000e+01	
+70	7.000000e+01	
+71	7.100000e+01	
+72	7.200000e+01	
+73	7.300000e+01	
+74	7.400000e+01	
+75	7.500000e+01	
+76	7.600000e+01	
+77	7.700000e+01	
+78	7.800000e+01	
+79	7.900000e+01	
+80	8.000000e+01	
+81	8.100000e+01	
+82	8.200000e+01	
+83	8.300000e+01	
+84	8.400000e+01	
+85	8.500000e+01	
+86	8.600000e+01	
+87	8.700000e+01	
+88	8.800000e+01	
+89	8.900000e+01	
+90	9.000000e+01	
+91	9.100000e+01	
+92	9.200000e+01	
+93	9.300000e+01	
+94	9.400000e+01	
+95	9.500000e+01	
+96	9.600000e+01	
+97	9.700000e+01	
+98	9.800000e+01	
+99	9.900000e+01	
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.00Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+0000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.00Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+0000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.00Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+0000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.00Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+0000 and TNOM = 27.000000
+
+ Reference value :  0.00000e+00
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Reset re-loads circuit ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_ak_ip__cmos_vref/cace/tb_vref_mc.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+                                Constant values
+                                constants  Sun Mar 10 02:59:47 UTC 2024
+--------------------------------------------------------------------------------
+Index   v(vref_data)    
+--------------------------------------------------------------------------------
+0	1.694240e+00	
+1	1.694441e+00	
+2	1.694066e+00	
+3	1.695302e+00	
+4	1.695789e+00	
+5	1.694383e+00	
+6	1.694772e+00	
+7	1.693144e+00	
+8	1.693895e+00	
+9	1.694987e+00	
+10	1.694479e+00	
+11	1.694249e+00	
+12	1.694314e+00	
+13	1.695117e+00	
+14	1.693796e+00	
+15	1.693463e+00	
+16	1.694771e+00	
+17	1.694208e+00	
+18	1.694586e+00	
+19	1.694844e+00	
+20	1.694216e+00	
+21	1.693494e+00	
+22	1.694506e+00	
+23	1.694384e+00	
+24	1.693780e+00	
+25	1.694727e+00	
+26	1.694330e+00	
+27	1.693694e+00	
+28	1.693640e+00	
+29	1.694846e+00	
+30	1.693755e+00	
+31	1.694070e+00	
+32	1.694319e+00	
+33	1.693063e+00	
+34	1.694589e+00	
+35	1.694172e+00	
+36	1.694710e+00	
+37	1.694692e+00	
+38	1.694720e+00	
+39	1.693745e+00	
+40	1.694831e+00	
+41	1.694861e+00	
+42	1.693860e+00	
+43	1.694809e+00	
+44	1.694279e+00	
+45	1.693816e+00	
+46	1.695641e+00	
+47	1.694611e+00	
+48	1.695173e+00	
+49	1.694967e+00	
+50	1.694400e+00	
+51	1.694415e+00	
+52	1.693744e+00	
+53	1.694823e+00	
+54	1.694493e+00	
+
+Index   v(vref_data)    
+--------------------------------------------------------------------------------
+55	1.693957e+00	
+56	1.695426e+00	
+57	1.694879e+00	
+58	1.694413e+00	
+59	1.694155e+00	
+60	1.694467e+00	
+61	1.694279e+00	
+62	1.695088e+00	
+63	1.694297e+00	
+64	1.695223e+00	
+65	1.695165e+00	
+66	1.694587e+00	
+67	1.694036e+00	
+68	1.694287e+00	
+69	1.693974e+00	
+70	1.693900e+00	
+71	1.695989e+00	
+72	1.694967e+00	
+73	1.694604e+00	
+74	1.694368e+00	
+75	1.694240e+00	
+76	1.695134e+00	
+77	1.694111e+00	
+78	1.694747e+00	
+79	1.692918e+00	
+80	1.695511e+00	
+81	1.694326e+00	
+82	1.694856e+00	
+83	1.694326e+00	
+84	1.693191e+00	
+85	1.694805e+00	
+86	1.693976e+00	
+87	1.694321e+00	
+88	1.694323e+00	
+89	1.694764e+00	
+90	1.694692e+00	
+91	1.694698e+00	
+92	1.694366e+00	
+93	1.694311e+00	
+94	1.694160e+00	
+95	1.694200e+00	
+96	1.694331e+00	
+97	1.693564e+00	
+98	1.693951e+00	
+99	1.694180e+00	
+ngspice-42 done
+Files to simulate method vref_histogram: 1
+Completed 1 of 1 simulations
+Plotting results
+Simulation of vref_histogram has completed.
+no datasheet_anno, so there are no results to save.
