@@ -3,24 +3,24 @@
 *.PININFO vref:O avss:B avdd:B vx:O trim0:I trim1:I trim2:I trim3:I dvdd:B dvss:B ena:I
 XM2 vref vref vx sky130_fd_pr__nfet_01v8 L=10 W=2 nf=1 m=1
 XM1 vx vref avss sky130_fd_pr__nfet_01v8 L=20 W=2.5 nf=1 m=1
-XM3 net1 net3 vx sky130_fd_pr__nfet_01v8 L=1 W=100 nf=5 m=1
-XM4 net2 net3 avss sky130_fd_pr__nfet_01v8 L=1 W=5 nf=1 m=1
-XM5 net4 vref net1 sky130_fd_pr__nfet_01v8 L=10 W=10 nf=1 m=1
-XM6 net3 vref net2 sky130_fd_pr__nfet_01v8 L=10 W=10 nf=1 m=1
-XM7 net4 net4 avdd_ena sky130_fd_pr__pfet_01v8 L=10 W=5 nf=1 m=1
-XM8 net3 net4 avdd_ena sky130_fd_pr__pfet_01v8 L=10 W=5 nf=1 m=1
-XM9 vref net4 avdd_ena sky130_fd_pr__pfet_01v8 L=10 W=50 nf=1 m=1
-XM10 net5 net3 avss sky130_fd_pr__nfet_01v8 L=1 W=5 nf=1 m=1
-XM11 net4 net5 avss sky130_fd_pr__nfet_01v8 L=1 W=5 nf=1 m=1
-XC1 avdd_ena net5 sky130_fd_pr__cap_mim_m3_1 W=5 L=5 m=1
-XM12 vref net4 net9 sky130_fd_pr__pfet_01v8 L=10 W=1 nf=1 m=1
-XM13 vref net4 net8 sky130_fd_pr__pfet_01v8 L=10 W=2 nf=1 m=1
-XM14 net9 trim0 avdd_ena sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
-XM15 net8 trim1 avdd_ena sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
-XM16 vref net4 net7 sky130_fd_pr__pfet_01v8 L=10 W=4 nf=1 m=1
-XM17 net7 trim2 avdd_ena sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
-XM18 vref net4 net6 sky130_fd_pr__pfet_01v8 L=10 W=8 nf=1 m=1
-XM19 net6 trim3 avdd_ena sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
+XM3 net1 vbn vx sky130_fd_pr__nfet_01v8 L=1 W=100 nf=5 m=1
+XM4 net2 vbn avss sky130_fd_pr__nfet_01v8 L=1 W=5 nf=1 m=1
+XM5 vbp vref net1 sky130_fd_pr__nfet_01v8 L=10 W=10 nf=1 m=1
+XM6 vbn vref net2 sky130_fd_pr__nfet_01v8 L=10 W=10 nf=1 m=1
+XM7 vbp vbp net7 sky130_fd_pr__pfet_01v8 L=10 W=5 nf=1 m=1
+XM8 vbn vbp avdd_ena sky130_fd_pr__pfet_01v8 L=10 W=5 nf=1 m=1
+XM9 vref vbp avdd_ena sky130_fd_pr__pfet_01v8 L=10 W=50 nf=1 m=1
+XM10 kick vbn avss sky130_fd_pr__nfet_01v8 L=1 W=5 nf=1 m=1
+XM11 vbp kick avss sky130_fd_pr__nfet_01v8 L=1 W=5 nf=1 m=1
+XC1 avdd_ena kick sky130_fd_pr__cap_mim_m3_1 W=5 L=5 m=1
+XM12 net3 vbp avdd_ena sky130_fd_pr__pfet_01v8 L=10 W=1 nf=1 m=1
+XM13 net4 vbp avdd_ena sky130_fd_pr__pfet_01v8 L=10 W=2 nf=1 m=1
+XM14 vref trim0 net6 sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
+XM15 vref trim1 net5 sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
+XM16 net5 vbp avdd_ena sky130_fd_pr__pfet_01v8 L=10 W=4 nf=1 m=1
+XM17 vref trim2 net4 sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
+XM18 net6 vbp avdd_ena sky130_fd_pr__pfet_01v8 L=10 W=8 nf=1 m=1
+XM19 vref trim3 net3 sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
 XM20 avdd_ena ena avdd sky130_fd_pr__pfet_01v8 L=0.3 W=5 nf=1 m=1
 .ends
 .end
