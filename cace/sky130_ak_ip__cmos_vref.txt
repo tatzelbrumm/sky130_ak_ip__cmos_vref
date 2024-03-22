@@ -567,7 +567,7 @@ electrical_parameters {
 		typical: tt
 	}
 
-+
+	+
 	name:			line_reg_plot
 	status:			skip
 	description:	Reference Voltage vs Supply Voltage
@@ -608,7 +608,7 @@ electrical_parameters {
 		typical: tt
 	}
 
-+
+	+
 	name:			startup_plot
 	status:			skip
 	description:	Bandgap Voltage startup time
