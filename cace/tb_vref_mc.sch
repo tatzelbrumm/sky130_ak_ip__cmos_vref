@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.4 file_version=1.2
 }
 G {}
 K {}
@@ -62,16 +62,22 @@ set wr_singlescale
 let it = 0
 let iterations = \{iterations|maximum\}
 let output_option = \{output_option\}
+let ref_pin_option = \{ref_pin_option\}
 let vref_data = vector(iterations)
 let vref_mean = 0
 print iterations
 print vref_data
 dowhile it < iterations
 	reset
-	save vbg
+	save vbg, vbgsc, vbgtg
 	op
-	let vref_data[it] = V(vbg)
-	let vref_mean = vref_mean + V(vbg)
+	if ref_pin_option = 1
+		let vref_data[it] = V(vbgsc)
+		let vref_mean = vref_mean + V(vbgsc)
+	else
+		let vref_data[it] = V(vbg)
+		let vref_mean = vref_mean + V(vbg)
+	end
 	let it = it + 1
 end
 if output_option = 0
@@ -106,7 +112,7 @@ quit
 "}
 C {devices/lab_pin.sym} 190 40 0 1 {name=l10 sig_type=std_logic lab=vbg}
 C {devices/gnd.sym} 170 10 0 0 {name=l20 lab=GND}
-C {xschem/sky130_ak_ip__cmos_vref.sym} 10 40 0 0 {name=X1}
+C {../xschem/sky130_ak_ip__cmos_vref.sym} 10 40 0 0 {name=X1}
 C {devices/vdd.sym} -290 -130 0 0 {name=l1 lab=avdd}
 C {devices/vsource.sym} -290 -100 0 0 {name=Vsense1 value="dc 0"}
 C {devices/vdd.sym} -200 40 0 0 {name=l4 lab=dvdd}

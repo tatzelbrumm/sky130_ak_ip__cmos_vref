@@ -217,10 +217,10 @@ default_conditions {
 
 electrical_parameters {
 
-	name:			vref_nom
+	name:			vbg_nom
 	status:			skip
 	description:	Nominal Reference Voltage
-	display:		Vref Nominal
+	display:		Vbg Nominal
 	unit: 			V
 	spec {
 		minimum:	1.18 fail
@@ -238,6 +238,37 @@ electrical_parameters {
 
 		+
 		name: output_option
+		typical: 1
+
+		+
+		name: ref_pin_option
+		typical: 0
+	}
+
+	+
+	name:			vbgsc_nom
+	status:			skip
+	description:	Scaled Reference Voltage of 1024mV
+	display:		Vbgsc Nominal
+	unit: 			mV
+	spec {
+		typical:	1024
+	}
+	simulate {
+		tool:		ngspice
+		template:	tb_vref_mc.spice
+		format:		ascii .data null result
+	}
+	conditions {
+		name: iterations
+		typical: 10
+
+		+
+		name: output_option
+		typical: 1
+
+		+
+		name: ref_pin_option
 		typical: 1
 	}
 
