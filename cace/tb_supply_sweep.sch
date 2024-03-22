@@ -57,6 +57,8 @@ C {devices/gnd.sym} -190 -240 0 0 {name=l8 lab=GND}
 C {devices/code.sym} 210 -330 0 0 {name=stimuli
 only_toplevel=false
 value="
+.option warn=1
+.option TEMP=\{temperature\}
 .control
 save vbg
 dc Vavdd \{Vavdd|minimum\} \{Vavdd|maximum\} 10m
