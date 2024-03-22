@@ -369,6 +369,10 @@ electrical_parameters {
 		+
 		name: output_option
 		typical: 2
+
+		+
+		name: ref_pin_option
+		typical: 0
 	}
 
 	+
