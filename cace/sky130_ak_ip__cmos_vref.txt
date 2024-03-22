@@ -175,11 +175,18 @@ default_conditions {
 	typical:		0
 
 	+
-	name:		Rout
+	name:			Rload
 	description:	Output load resistance
-	display:	RLoad
-	unit:		M{ohms}
-	typical:	100
+	display:		RLoad
+	unit:			{ohms}
+	typical:		10e6
+
+	+
+	name:			Cload
+	description:	Output load capacitance
+	display:		CLoad
+	unit:			pF
+	typical:		0.1
 
 	+
 	name:			temperature
