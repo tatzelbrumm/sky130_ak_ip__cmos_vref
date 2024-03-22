@@ -7,17 +7,25 @@ This project is part of the chipalooza contest, submited for the "1.8V Precision
 
 The circuit specifications are listed below, but they are getting better day by day, until the chipalooza schematic deadline!
 
-| Measure             | Value   | Unit   |
-| ------------------- | ------- | ------ |
-| Reference Voltage   | 802     | mV     |
-| Current Consumption | 690     | nA     |
-| PSRR                | 73,5    | dB     |
-| Temperature Coeff.  | 35,5    | ppm/°C |
+| Measure                | Value   | Unit   |
+| ---------------------- | ------- | ------ |
+| Reference Voltage      | 1202    | mV     |
+| Initial Accuracy (3s)  | .4012   | %      |
+| Current Consumption    | ~2,2    | uA     |
+| PSRR                   | 73,5    | dB     |
+| Temperature Coeff.     | 35,5    | ppm/°C |
+| Line Regulation        | 0.1519  | %      |
+| Load Regulation        | 0.0345  | %      |
 
 The temperature behavior is already adjusted, but using NFET1.8 transistors, the temperature coefficient specification of 30 ppm/°C will probably not be reached.
 
 ![Reference Voltage vs Temperature](plots/schematic/vref_vs_temp.png)
 
-The image belows that the minimum voltage for the circuit to start operating as a voltage reference is around 1.3V.
+The image belows that the minimum voltage for the circuit to start operating as a voltage reference is around 1.4V.
 
 ![Reference Voltage vs Supply Voltage](plots/schematic/vref_vs_vsup.png)
+
+Finally, process variation seem to be under control, the histogram below shows the variation range after
+100 iterations of a monte carlo simulation.
+
+![Reference Voltage vs Process Variation](plots/schematic/vref_vs_process.png)
