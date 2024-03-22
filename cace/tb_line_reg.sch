@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.4 file_version=1.2
 }
 G {}
 K {}
@@ -64,7 +64,7 @@ dc Vavdd \{Vavdd|minimum\} \{Vavdd|maximum\} 10m
 let supply_diff = \{Vavdd|maximum\}-\{Vavdd|minimum\}
 let vref_diff = maximum(vbg)-minimum(vbg)
 let vref_nom = (maximum(vbg)+minimum(vbg))/2
-let line_reg = vref_diff/(vref_nom*supply_diff)
+let line_reg = vref_diff/(vref_nom)
 
 echo $&line_reg > \{simpath\}/\{filename\}_\{N\}.data
 quit
@@ -72,7 +72,7 @@ quit
 "}
 C {devices/lab_pin.sym} 320 10 0 1 {name=l10 sig_type=std_logic lab=vbg}
 C {devices/gnd.sym} 170 10 0 0 {name=l20 lab=GND}
-C {xschem/sky130_ak_ip__cmos_vref.sym} 10 40 0 0 {name=X1}
+C {../xschem/sky130_ak_ip__cmos_vref.sym} 10 40 0 0 {name=X1}
 C {devices/vdd.sym} -290 -130 0 0 {name=l1 lab=avdd}
 C {devices/vsource.sym} -290 -100 0 0 {name=Vsense1 value="dc 0"}
 C {devices/vdd.sym} -200 40 0 0 {name=l4 lab=dvdd}
