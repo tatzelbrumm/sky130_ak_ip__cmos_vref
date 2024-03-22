@@ -504,8 +504,55 @@ electrical_parameters {
 		maximum: 1.98
 
 		+
-		name: Vdvdd
-		typical: 1.8
+		name: temperature
+		typical: 27
+
+		+
+		name: corner
+		typical: tt
+	}
+
++
+	name:			startup_plot
+	status:			skip
+	description:	Bandgap Voltage startup time
+	display:		Startup Time
+	unit:			mV
+	simulate {
+		tool:		ngspice
+		template:	tb_startup.spice
+		format:		ascii .data time result
+	}
+	plot {
+		filename: vref_startup.png
+		xaxis: time
+		yaxis: result
+	}
+	variables {
+		name: time
+		display: Time
+		unit: ms
+
+		+
+		name: result
+		display: reference Voltage
+		unit: V
+	}
+	conditions {
+		name: Vena
+		minimum: 0
+		maximum: 1.8
+		unit: V
+
+		+
+		name: rise_time
+		typical: 100
+		unit: ns
+
+		+
+		name: startup_time
+		typical: 5
+		unit: us
 
 		+
 		name: temperature
