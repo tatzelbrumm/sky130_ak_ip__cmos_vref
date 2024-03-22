@@ -38,7 +38,7 @@ lab=#net1}
 N 300 -410 300 -370 {
 lab=#net1}
 N 160 -260 180 -260 {
-lab=vp}
+lab=vn}
 N 420 -260 440 -260 {
 lab=vp}
 N 380 -330 460 -330 {
@@ -112,8 +112,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet3_01v8.sym} 280 -80 0 0 {name=M2
-L=2.5
-W=1
+L=1
+W=5
 body=GND
 nf=1
 mult=1
@@ -142,8 +142,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet3_01v8.sym} 200 -260 0 0 {name=M4
-L=0.15
-W=2.5
+L=1
+W=5
 body=GND
 nf=1
 mult=1
@@ -157,8 +157,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet3_01v8.sym} 400 -260 0 1 {name=M5
-L=0.15
-W=2.5
+L=1
+W=5
 body=GND
 nf=1
 mult=1
@@ -206,8 +206,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet3_01v8.sym} 600 -400 0 0 {name=M8
-W=10
-L=0.15
+W=40
+L=5
 body=avdd
 nf=1
 mult=1
