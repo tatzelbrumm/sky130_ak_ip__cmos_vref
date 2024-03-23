@@ -112,14 +112,6 @@ pins {
 	Vmax:			dvdd+0.3
 
 	+
-	name:			vena
-	description:	Enable scaled outputs
-	type:			digital
-	direction:		input
-	Vmin:			dgnd-0.3
-	Vmax:			dvdd+0.3
-
-	+
 	name:			trim0
 	description:	Trim bit 0
 	type:			digital
