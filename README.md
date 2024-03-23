@@ -9,13 +9,14 @@ The circuit specifications are listed below, but they are getting better day by 
 
 | Measure                | Value   | Unit   |
 | ---------------------- | ------- | ------ |
-| Reference Voltage      | 1202    | mV     |
+| Reference Voltage      | 1199    | mV     |
 | Initial Accuracy (3s)  | .4012   | %      |
 | Current Consumption    | ~2,2    | uA     |
-| PSRR                   | 73,5    | dB     |
+| PSRR                   | 81      | dB     |
 | Temperature Coeff.     | 35,5    | ppm/°C |
 | Line Regulation        | 0.1519  | %      |
 | Load Regulation        | 0.0345  | %      |
+| Startup Time           | ~25     | us     |
 
 The temperature behavior is already adjusted, but using NFET1.8 transistors, the temperature coefficient specification of 30 ppm/°C will probably not be reached.
 
@@ -25,7 +26,12 @@ The image belows that the minimum voltage for the circuit to start operating as 
 
 ![Reference Voltage vs Supply Voltage](plots/schematic/vref_vs_vsup.png)
 
-Finally, process variation seem to be under control, the histogram below shows the variation range after
+Process variation seem to be under control, the histogram below shows the variation range after
 100 iterations of a monte carlo simulation.
 
 ![Reference Voltage vs Process Variation](plots/schematic/vref_vs_process.png)
+
+The startup time is around 25 us after the enable pin is pulled low, as can be seen in the
+plot below. For this simulation, enable fall time was 100ns.
+
+![Startup Time](plots/schematic/vref_startup.png)
