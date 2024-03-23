@@ -631,7 +631,7 @@ electrical_parameters {
 	variables {
 		name: time
 		display: Time
-		unit: ms
+		unit: {micro}s
 
 		+
 		name: result
@@ -645,14 +645,29 @@ electrical_parameters {
 		unit: V
 
 		+
+		name: enable_time
+		typical: 10
+		unit: {micro}s
+
+		+
 		name: rise_time
 		typical: 100
 		unit: ns
 
 		+
-		name: startup_time
-		typical: 5
-		unit: us
+		name: tran_step
+		typical: 10
+		unit: ns
+
+		+
+		name: tran_start
+		typical: 10
+		unit: {micro}s
+
+		+
+		name: tran_stop
+		typical: 50
+		unit: {micro}s
 
 		+
 		name: temperature
