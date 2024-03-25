@@ -19,14 +19,6 @@ N 1970 -160 1970 -130 {
 lab=avdd_ena}
 N 1970 -130 1990 -130 {
 lab=avdd_ena}
-N 2170 -250 2190 -250 {
-lab=avdd}
-N 2170 -250 2170 -220 {
-lab=avdd}
-N 2170 -160 2170 -130 {
-lab=avdd_vena}
-N 2170 -130 2190 -130 {
-lab=avdd_vena}
 N 2440 -220 2480 -220 {
 lab=dvdd}
 N 2440 -190 2480 -190 {
@@ -80,8 +72,6 @@ lab=vref}
 N 2950 -450 2950 -410 {
 lab=pbias}
 N 2950 -450 2970 -450 {
-lab=pbias}
-N 3360 -450 3420 -450 {
 lab=pbias}
 N 3120 -580 3460 -580 {
 lab=avdd_ena}
@@ -153,6 +143,28 @@ N 3620 -510 3620 -340 {
 lab=vbg}
 N 3620 -510 3700 -510 {
 lab=vbg}
+N 3260 -310 3280 -310 {
+lab=iptat}
+N 3370 -480 3370 -450 {
+lab=pbias}
+N 3320 -450 3420 -450 {
+lab=pbias}
+N 3280 -500 3280 -480 {
+lab=#net7}
+N 3280 -580 3280 -560 {
+lab=avdd_ena}
+N 3280 -420 3280 -310 {
+lab=iptat}
+N 3660 -460 3680 -460 {
+lab=avss}
+N 3660 -380 3680 -380 {
+lab=avss}
+N 3660 -300 3680 -300 {
+lab=avss}
+N 3660 -220 3680 -220 {
+lab=avss}
+N 3660 -460 3660 -170 {
+lab=avss}
 C {devices/opin.sym} 3720 -510 0 0 {name=p2 lab=vbg
 }
 C {devices/iopin.sym} 2480 -160 0 0 {name=p9 lab=avss}
@@ -222,24 +234,6 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {devices/ipin.sym} 2010 -190 0 1 {name=p14 lab=ena}
-C {devices/iopin.sym} 2190 -250 0 0 {name=p16 lab=avdd}
-C {devices/lab_pin.sym} 2190 -130 0 1 {name=p17 sig_type=std_logic lab=avdd_vena}
-C {sky130_fd_pr/pfet3_01v8.sym} 2190 -190 0 1 {name=M21
-W=10
-L=0.3
-body=dvdd
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {devices/ipin.sym} 2210 -190 0 1 {name=p18 lab=vena}
 C {devices/opin.sym} 3720 -340 0 0 {name=p20 lab=vbgsc
 }
 C {devices/opin.sym} 3720 -420 0 0 {name=p21 lab=vbgtg
@@ -269,7 +263,7 @@ spiceprefix=X
 C {devices/ammeter.sym} 2870 -530 0 0 {name=Vm_b1 savecurrent=true}
 C {devices/lab_pin.sym} 3350 -360 0 0 {name=p1 sig_type=std_logic lab=vref}
 C {devices/lab_pin.sym} 2970 -450 0 1 {name=p24 sig_type=std_logic lab=pbias}
-C {devices/lab_pin.sym} 3360 -450 0 0 {name=p26 sig_type=std_logic lab=pbias}
+C {devices/lab_pin.sym} 3370 -480 0 0 {name=p26 sig_type=std_logic lab=pbias}
 C {devices/ammeter.sym} 3120 -530 0 0 {name=Vm_b2 savecurrent=true}
 C {devices/ammeter.sym} 3460 -530 0 0 {name=Vm_b3 savecurrent=true}
 C {/home/moduhub/work/sky130_ak_ip__cmos_vref/xschem/trim_pfet.sym} 2650 -420 0 0 {name=x3}
@@ -278,23 +272,44 @@ C {devices/ipin.sym} 2550 -450 0 0 {name=p4 lab=trim3}
 C {devices/ipin.sym} 2550 -430 0 0 {name=p5 lab=trim2}
 C {devices/ipin.sym} 2550 -410 0 0 {name=p6 lab=trim1}
 C {devices/ipin.sym} 2550 -390 0 0 {name=p11 lab=trim0}
-C {devices/res.sym} 3700 -460 0 0 {name=R1
-value=152k
-footprint=1206
-device=resistor
-m=1}
-C {devices/res.sym} 3700 -380 0 0 {name=R2
-value=24k
-footprint=1206
-device=resistor
-m=1}
-C {devices/res.sym} 3700 -300 0 0 {name=R3
-value=224k
-footprint=1206
-device=resistor
-m=1}
-C {devices/res.sym} 3700 -220 0 0 {name=R4
-value=800k
-footprint=1206
-device=resistor
-m=1}
+C {devices/iopin.sym} 3260 -310 0 1 {name=p22 lab=iptat}
+C {sky130_fd_pr/pfet3_01v8.sym} 3300 -450 0 1 {name=M4
+W=5
+L=10
+body=avdd
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {devices/ammeter.sym} 3280 -530 0 0 {name=Vm_ptat savecurrent=true}
+C {sky130_fd_pr/res_xhigh_po.sym} 3700 -220 0 0 {name=R4
+W=1
+L=401
+model=res_xhigh_po
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_xhigh_po.sym} 3700 -300 0 0 {name=R3
+W=1
+L=111
+model=res_xhigh_po
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_xhigh_po.sym} 3700 -380 0 0 {name=R2
+W=1
+L=12
+model=res_xhigh_po
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/res_xhigh_po.sym} 3700 -460 0 0 {name=R1
+W=1
+L=76
+model=res_xhigh_po
+spiceprefix=X
+mult=1}
