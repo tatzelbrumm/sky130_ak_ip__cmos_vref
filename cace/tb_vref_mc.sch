@@ -33,10 +33,6 @@ N 130 -20 170 -20 {
 lab=GND}
 N -160 10 -120 10 {
 lab=GND}
-N 130 10 170 10 {
-lab=GND}
-N 130 130 380 130 {
-lab=#net3}
 N 130 70 190 70 {
 lab=vbgsc}
 N 130 100 190 100 {
@@ -49,6 +45,8 @@ N 390 -100 530 -100 {
 lab=vbg}
 N 450 -40 530 -40 {
 lab=GND}
+N 130 130 170 130 {
+lab=#net3}
 C {devices/vsource.sym} -130 -270 0 0 {name=Vavdd value="dc \{Vavdd\}"}
 C {devices/vdd.sym} -130 -300 0 0 {name=l7 lab=avdd}
 C {devices/gnd.sym} -130 -240 0 0 {name=l8 lab=GND}
@@ -128,8 +126,7 @@ C {devices/gnd.sym} 490 -40 0 0 {name=l9 lab=GND}
 C {devices/vdd.sym} -190 -130 0 0 {name=l11 lab=dvdd}
 C {devices/vsource.sym} -190 -100 0 0 {name=Vsense2 value="dc 0"}
 C {devices/gnd.sym} -160 10 0 0 {name=l12 lab=GND}
-C {devices/vsource.sym} 380 100 0 0 {name=Vsense3 value="dc 0"}
-C {devices/vdd.sym} 380 70 0 0 {name=l2 lab=avdd}
+C {devices/vsource.sym} 170 160 0 0 {name=Vsense3 value="dc 0"}
 C {devices/lab_pin.sym} 190 70 0 1 {name=l3 sig_type=std_logic lab=vbgsc}
 C {devices/lab_pin.sym} 190 100 0 1 {name=l13 sig_type=std_logic lab=vbgtg}
 C {devices/res.sym} 450 -70 0 0 {name=R1
@@ -139,3 +136,4 @@ device=resistor
 m=1}
 C {devices/lab_pin.sym} 390 -100 0 0 {name=l14 sig_type=std_logic lab=vbg}
 C {sky130_fd_pr/corner.sym} 70 -330 0 0 {name=CORNER only_toplevel=false corner=mc}
+C {devices/gnd.sym} 170 190 0 0 {name=l2 lab=GND}
