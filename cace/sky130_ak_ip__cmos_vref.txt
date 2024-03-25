@@ -221,10 +221,14 @@ electrical_parameters {
 	}
 	simulate {
 		tool:		ngspice
-		template:	tb_vref_mc.spice
+		template:	tb_vref_stat.spice
 		format:		ascii .data null result
 	}
 	conditions {
+		name: corner
+		typical: mc
+
+		+
 		name: iterations
 		typical: 10
 
@@ -244,14 +248,20 @@ electrical_parameters {
 	display:		Vbgsc Nominal
 	unit: 			mV
 	spec {
+		minimum:	any
 		typical:	1024
+		maximum:	any
 	}
 	simulate {
 		tool:		ngspice
-		template:	tb_vref_mc.spice
+		template:	tb_vref_stat.spice
 		format:		ascii .data null result
 	}
 	conditions {
+		name: corner
+		typical: mc
+
+		+
 		name: iterations
 		typical: 10
 
@@ -339,10 +349,10 @@ electrical_parameters {
 	}
 
 	+
-	name:			accuracy
+	name:			accuracy_vs_process
 	status:			skip
-	description:	Reference voltage error at room temperature
-	display:		Initial Accuracy
+	description:	Reference voltage error due to process variation
+	display:		Accuracy vs Process
 	unit: 			%
 	spec {
 		minimum:	any
@@ -351,10 +361,47 @@ electrical_parameters {
 	}
 	simulate {
 		tool:		ngspice
-		template:	tb_vref_mc.spice
+		template:	tb_vref_stat.spice
 		format:		ascii .data null result
 	}
 	conditions {
+		name: corner
+		typical: mc
+
+		+
+		name: iterations
+		typical: 100
+
+		+
+		name: output_option
+		typical: 2
+
+		+
+		name: ref_pin_option
+		typical: 0
+	}
+
+	+
+	name:			accuracy_vs_mismatch
+	status:			skip
+	description:	Reference voltage error due to mismatch around typical corner
+	display:		Accuracy vs Mismatch
+	unit: 			%
+	spec {
+		minimum:	any
+		typical:	0.2
+		maximum:	0.5 fail
+	}
+	simulate {
+		tool:		ngspice
+		template:	tb_vref_stat.spice
+		format:		ascii .data null result
+	}
+	conditions {
+		name: corner
+		typical: tt_mm
+
+		+
 		name: iterations
 		typical: 100
 
@@ -671,14 +718,14 @@ electrical_parameters {
 	}
 
 	+
-	name:			vref_histogram
+	name:			vref_process_histogram
 	status:			skip
 	description:	Reference Voltage vs Process Variation
 	display:		Vref vs Process Variation
 	unit: 			V
 	simulate {
 		tool:		ngspice
-		template:	tb_vref_mc.spice
+		template:	tb_vref_stat.spice
 		format:		ascii .data null result
 	}
 	plot {
@@ -687,11 +734,52 @@ electrical_parameters {
 		xaxis: result
 	}
 	conditions {
+		name: corner
+		typical: mc
+
+		+
 		name: iterations
 		maximum: 100
 
 		+
 		name: output_option
+		typical: 0
+
+		+
+		name: ref_pin_option
+		typical: 0
+	}
+
+	+
+	name:			vref_mismatch_histogram
+	status:			skip
+	description:	Reference Voltage vs Mismatch
+	display:		Vref vs Mismatch
+	unit: 			V
+	simulate {
+		tool:		ngspice
+		template:	tb_vref_stat.spice
+		format:		ascii .data null result
+	}
+	plot {
+		type: histogram
+		filename: vref_vs_mismatch.png
+		xaxis: result
+	}
+	conditions {
+		name: corner
+		typical: tt_mm
+
+		+
+		name: iterations
+		maximum: 100
+
+		+
+		name: output_option
+		typical: 0
+
+		+
+		name: ref_pin_option
 		typical: 0
 	}
 

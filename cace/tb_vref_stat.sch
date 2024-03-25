@@ -50,7 +50,7 @@ lab=#net3}
 C {devices/vsource.sym} -130 -270 0 0 {name=Vavdd value="dc \{Vavdd\}"}
 C {devices/vdd.sym} -130 -300 0 0 {name=l7 lab=avdd}
 C {devices/gnd.sym} -130 -240 0 0 {name=l8 lab=GND}
-C {devices/code.sym} 190 -330 0 0 {name=stimuli
+C {devices/code.sym} 220 -330 0 0 {name=stimuli
 only_toplevel=false
 value="
 .option warn=1
@@ -103,6 +103,7 @@ dowhile it < iterations
 end
 let vref_deviation = (vref_deviation / iterations)^0.5
 let vref_accuracy = 3 * vref_deviation / vref_mean
+print vref_data
 print vref_accuracy
 wrdata \{simpath\}/\{filename\}_\{N\}.data vref_accuracy
 quit
@@ -135,5 +136,5 @@ footprint=1206
 device=resistor
 m=1}
 C {devices/lab_pin.sym} 390 -100 0 0 {name=l14 sig_type=std_logic lab=vbg}
-C {sky130_fd_pr/corner.sym} 70 -330 0 0 {name=CORNER only_toplevel=false corner=mc}
+C {sky130_fd_pr/corner.sym} 70 -330 0 0 {name=CORNER only_toplevel=false corner=\{corner\}}
 C {devices/gnd.sym} 170 190 0 0 {name=l2 lab=GND}
