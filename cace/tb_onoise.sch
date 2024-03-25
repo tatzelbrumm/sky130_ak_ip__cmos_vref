@@ -37,18 +37,14 @@ N 270 10 270 40 {
 lab=vbg}
 N -160 10 -120 10 {
 lab=GND}
-N 130 10 170 10 {
-lab=GND}
 N 170 -50 170 10 {
 lab=GND}
-N 130 130 130 240 {
-lab=#net3}
-N 130 240 170 240 {
-lab=#net3}
 N 270 40 350 40 {
 lab=vbg}
 N 270 100 350 100 {
 lab=GND}
+N 130 130 170 130 {
+lab=#net3}
 C {devices/vsource.sym} -190 -270 0 0 {name=Vavdd value="DC \{Vavdd\}"}
 C {devices/vdd.sym} -190 -360 0 0 {name=l7 lab=avdd}
 C {devices/gnd.sym} -190 -240 0 0 {name=l8 lab=GND}
@@ -59,7 +55,8 @@ value="
 .option TEMP=\{temperature\}
 .control
 save all
-noise v(vbg, avss) Vin dec 10 0.1 10
+set sqrnoise
+noise v(vbg, avss) Vin dec 10 \{frequency|minimum\} \{frequency|maximum\}
 setplot noise2
 print onoise_total
 echo $&onoise_total > \{simpath\}/\{filename\}_\{N\}.data
@@ -79,8 +76,7 @@ C {devices/vdd.sym} -190 -130 0 0 {name=l11 lab=dvdd}
 C {devices/vsource.sym} -190 -100 0 0 {name=Vsense2 value="dc 0"}
 C {devices/gnd.sym} -160 10 0 0 {name=l12 lab=GND}
 C {sky130_fd_pr/corner.sym} 60 -330 0 0 {name=CORNER only_toplevel=false corner=\{corner\}}
-C {devices/vdd.sym} 170 180 0 0 {name=l2 lab=avdd}
-C {devices/vsource.sym} 170 210 0 0 {name=Vsense3 value="dc 0"}
+C {devices/vsource.sym} 170 160 0 0 {name=Vsense3 value="dc 0"}
 C {devices/res.sym} 270 70 0 0 {name=R1
 value=\{Rload\}
 device=resistor
@@ -91,3 +87,4 @@ value=\{Cload\}
 device="ceramic capacitor"}
 C {devices/gnd.sym} 310 100 0 0 {name=l3 lab=GND}
 C {devices/vsource.sym} -190 -330 0 0 {name=Vin value="DC 0 AC 1"}
+C {devices/gnd.sym} 170 190 0 0 {name=l2 lab=GND}
