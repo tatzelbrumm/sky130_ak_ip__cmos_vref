@@ -1,4 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -221,3 +221,4 @@ C {devices/ammeter.sym} 3730 -510 0 0 {name=Vm_st2 savecurrent=true}
 C {devices/ammeter.sym} 3140 -560 0 0 {name=Vm_b1 savecurrent=true}
 C {devices/ammeter.sym} 3300 -560 0 0 {name=Vm_b2 savecurrent=true}
 C {devices/lab_pin.sym} 3630 -500 0 0 {name=p10 sig_type=std_logic lab=pbias}
+C {devices/lab_wire.sym} 3710 -370 0 0 {name=p11 sig_type=std_logic lab=kick}
