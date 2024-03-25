@@ -1,4 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
+v {xschem version=3.4.4 file_version=1.2
 }
 G {}
 K {}
@@ -41,26 +41,25 @@ N 130 70 200 70 {
 lab=vbgsc}
 N 130 100 200 100 {
 lab=vbgtg}
-N 130 130 310 130 {
-lab=#net3}
 N 410 -80 490 -80 {
 lab=vbg}
 N 410 -20 490 -20 {
 lab=GND}
 N 170 -50 170 -20 {
 lab=GND}
-N 130 10 170 10 {
-lab=GND}
 N 170 -20 170 10 {
 lab=GND}
+N 130 130 170 130 {
+lab=#net3}
 C {devices/vsource.sym} -190 -270 0 0 {name=Vavdd value="DC \{Vavdd\}"}
 C {devices/vdd.sym} -190 -300 0 0 {name=l7 lab=avdd}
 C {devices/gnd.sym} -190 -240 0 0 {name=l8 lab=GND}
 C {devices/code.sym} 190 -330 0 0 {name=stimuli
 only_toplevel=false
 value="
+.option warn=1
+.nodeset v(vbg)=1.2
 .control
-print \{Rload\}
 save vbg
 dc TEMP \{temperature|minimum\} \{temperature|maximum\} 5
 set wr_singlescale
@@ -69,7 +68,7 @@ quit
 .endc
 "}
 C {devices/lab_pin.sym} 450 -110 0 1 {name=l10 sig_type=std_logic lab=vbg}
-C {xschem/sky130_ak_ip__cmos_vref.sym} 10 40 0 0 {name=X1}
+C {../xschem/sky130_ak_ip__cmos_vref.sym} 10 40 0 0 {name=X1}
 C {devices/vdd.sym} -290 -130 0 0 {name=l1 lab=avdd}
 C {devices/vsource.sym} -290 -100 0 0 {name=Vsense1 value="dc 0"}
 C {devices/vdd.sym} -200 40 0 0 {name=l4 lab=dvdd}
@@ -83,8 +82,7 @@ C {devices/gnd.sym} 450 -20 0 0 {name=l9 lab=GND}
 C {devices/vdd.sym} -190 -130 0 0 {name=l11 lab=dvdd}
 C {devices/vsource.sym} -190 -100 0 0 {name=Vsense2 value="dc 0"}
 C {devices/gnd.sym} -160 10 0 0 {name=l12 lab=GND}
-C {devices/vsource.sym} 310 100 0 0 {name=Vsense3 value="dc 0"}
-C {devices/vdd.sym} 310 70 0 0 {name=l2 lab=avdd}
+C {devices/vsource.sym} 170 160 0 0 {name=Vsense3 value="dc 0"}
 C {devices/res.sym} 410 -50 0 0 {name=R1
 value=\{Rload\}
 device=resistor
@@ -94,3 +92,4 @@ C {devices/lab_pin.sym} 200 70 0 1 {name=p2 sig_type=std_logic lab=vbgsc}
 C {devices/lab_pin.sym} 200 100 0 1 {name=p3 sig_type=std_logic lab=vbgtg}
 C {devices/gnd.sym} 170 10 0 0 {name=l3 lab=GND}
 C {sky130_fd_pr/corner.sym} 60 -330 0 0 {name=CORNER only_toplevel=false corner=\{corner\}}
+C {devices/gnd.sym} 170 190 0 0 {name=l2 lab=GND}
