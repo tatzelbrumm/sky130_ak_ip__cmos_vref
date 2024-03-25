@@ -674,7 +674,7 @@ electrical_parameters {
 
 		+
 		name: result
-		display: reference Voltage
+		display: Reference Voltage
 		unit: V
 	}
 	conditions {
@@ -714,7 +714,9 @@ electrical_parameters {
 
 		+
 		name: corner
+		minimum: ss
 		typical: tt
+		maximum: ff
 	}
 
 	+
