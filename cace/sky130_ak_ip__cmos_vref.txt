@@ -564,6 +564,11 @@ electrical_parameters {
 		format:		ascii .data result
 	}
 	conditions {
+		name: frequency
+		minimum: 0.1
+		maximum: 10
+		
+		+
 		name: temperature
 		typical: 27
 
