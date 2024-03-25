@@ -247,10 +247,10 @@ C {devices/opin.sym} 3720 -420 0 0 {name=p21 lab=vbgtg
 C {devices/lab_pin.sym} 2440 -220 0 0 {name=p28 sig_type=std_logic lab=dvdd}
 C {devices/lab_pin.sym} 2440 -190 0 0 {name=p30 sig_type=std_logic lab=dvss}
 C {devices/lab_pin.sym} 2790 -230 0 0 {name=p19 sig_type=std_logic lab=vref}
-C {/home/moduhub/work/sky130_ak_ip__cmos_vref/xschem/sbvfcm.sym} 3120 -390 0 0 {name=x1}
+C {xschem/sbvfcm.sym} 3120 -390 0 0 {name=x1}
 C {devices/lab_pin.sym} 2440 -160 0 0 {name=p15 sig_type=std_logic lab=avss}
 C {devices/lab_pin.sym} 2790 -170 0 0 {name=p25 sig_type=std_logic lab=avss}
-C {/home/moduhub/work/sky130_ak_ip__cmos_vref/xschem/output_amp.sym} 3480 -340 0 0 {name=x2}
+C {xschem/output_amp.sym} 3480 -340 0 0 {name=x2}
 C {sky130_fd_pr/pfet3_01v8.sym} 3440 -450 0 0 {name=M3
 W=5
 L=10
@@ -272,7 +272,7 @@ C {devices/lab_pin.sym} 2970 -450 0 1 {name=p24 sig_type=std_logic lab=pbias}
 C {devices/lab_pin.sym} 3360 -450 0 0 {name=p26 sig_type=std_logic lab=pbias}
 C {devices/ammeter.sym} 3120 -530 0 0 {name=Vm_b2 savecurrent=true}
 C {devices/ammeter.sym} 3460 -530 0 0 {name=Vm_b3 savecurrent=true}
-C {/home/moduhub/work/sky130_ak_ip__cmos_vref/xschem/trim_pfet.sym} 2650 -420 0 0 {name=x3}
+C {xschem/trim_pfet.sym} 2650 -420 0 0 {name=x3}
 C {devices/lab_pin.sym} 2550 -470 0 0 {name=p3 sig_type=std_logic lab=dvdd}
 C {devices/ipin.sym} 2550 -450 0 0 {name=p4 lab=trim3}
 C {devices/ipin.sym} 2550 -430 0 0 {name=p5 lab=trim2}

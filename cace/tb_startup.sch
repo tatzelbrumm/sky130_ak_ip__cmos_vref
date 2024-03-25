@@ -73,7 +73,7 @@ quit
 "}
 C {devices/lab_pin.sym} 380 -80 0 1 {name=l10 sig_type=std_logic lab=vbg}
 C {devices/gnd.sym} 170 -20 0 0 {name=l20 lab=GND}
-C {/home/moduhub/work/sky130_ak_ip__cmos_vref/xschem/sky130_ak_ip__cmos_vref.sym} 10 40 0 0 {name=X1}
+C {xschem/sky130_ak_ip__cmos_vref.sym} 10 40 0 0 {name=X1}
 C {devices/vdd.sym} -210 -70 0 0 {name=l1 lab=avdd}
 C {devices/vdd.sym} -190 130 0 0 {name=l4 lab=dvdd}
 C {devices/vsource.sym} -30 -270 0 0 {name=Vdvdd value="DC \{Vdvdd\}"}
