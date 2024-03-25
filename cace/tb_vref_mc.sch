@@ -1,4 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -57,6 +57,7 @@ only_toplevel=false
 value="
 .option warn=1
 .option TEMP=\{temperature\}
+.nodeset v(x1.x1.kick)=1.5
 .control
 set wr_singlescale
 let it = 0
