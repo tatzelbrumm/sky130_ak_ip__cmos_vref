@@ -657,6 +657,50 @@ electrical_parameters {
 	}
 
 	+
+	name:			trim_plot
+	status:			skip
+	description:	Reference Voltage vs Trim Word
+	display:		Vref vs Trim
+	unit:			mV
+	simulate {
+		tool:		ngspice
+		template:	tb_trim.spice
+		format:		ascii .data trimword result
+	}
+	plot {
+		filename: vref_vs_trim.png
+		xaxis: trimword
+		yaxis: result
+	}
+	variables {
+		name: trimword
+		display: Trim Word
+		unit: U
+
+		+
+		name: result
+		display: Reference Voltage
+		unit: V
+
+	}
+	conditions {
+		name: vio
+		typical: 1.8
+		unit: V
+
+		+
+		name: temperature
+		typical: 27
+
+		+
+		name: corner
+		minimum: ff
+		typical: tt
+		maximum: ss
+	}
+
+
+	+
 	name:			startup_plot
 	status:			skip
 	description:	Bandgap Voltage startup time
