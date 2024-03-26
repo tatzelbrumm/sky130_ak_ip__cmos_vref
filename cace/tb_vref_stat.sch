@@ -55,6 +55,7 @@ only_toplevel=false
 value="
 .option warn=1
 .option TEMP=\{temperature\}
+.nodeset v(vbg)=1.2
 .control
 set wr_singlescale
 let it = 0
