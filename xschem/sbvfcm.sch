@@ -88,7 +88,7 @@ N 3770 -310 3790 -310 {
 lab=vbias_st}
 C {devices/iopin.sym} 3300 -210 0 0 {name=p9 lab=vss}
 C {sky130_fd_pr/nfet3_01v8.sym} 3160 -290 0 1 {name=M3
-L=1
+L=2
 W=100
 body=GND
 nf=5
@@ -103,7 +103,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet3_01v8.sym} 3280 -290 0 0 {name=M4
-L=1
+L=2
 W=5
 body=GND
 nf=1
